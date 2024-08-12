@@ -1,0 +1,110 @@
+
+new Weapon [ ] [ E_WEAPON_DATA ] = {
+	
+	// Add guns to the END of this array, not inbetween!! (fucks up guns for players)
+	{ 0,			"Fist",								AMMO_TYPE_NONE,	1, 	E_GUN_SEL_NONE,		9999, 9999,	9999,	9999, false  },
+	// Melee
+	{ WEAPON_BRASSKNUCKLE,	"Brass Knuckle",			AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_GOLFCLUB,		"Golf Club", 				AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_NITESTICK,		"Nitestick", 				AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_KNIFE,			"Knife", 					AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_BAT,			"Bat", 						AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_SHOVEL,		"Shovel", 					AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_POOLSTICK,		"Poolstick", 				AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_KATANA,		"Katana", 					AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_CHAINSAW,		"Chainsaw", 				AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_CANE,			"Cane", 					AMMO_TYPE_NONE,	1,  E_GUN_SEL_MELEE, 	30, 0, 1, 0, true } , // 150
+	{ WEAPON_SPRAYCAN, 		"Spray Can",				AMMO_TYPE_NONE,	15000, E_GUN_SEL_MELEE,	30, 0, 1, 0, true } , // 150
+
+
+
+	// PIstols
+	{ WEAPON_COLT45,		"ASP Pistol",				AMMO_TYPE_A, 	10, E_GUN_SEL_PISTOL,	45, 4, 5, 2, true }, // 
+	{ WEAPON_COLT45,		"Glock 17",					AMMO_TYPE_A, 	10, E_GUN_SEL_PISTOL,	45, 5, 5, 2, true }, // 
+	{ WEAPON_COLT45,		"Beretta M9",				AMMO_TYPE_I, 	10, E_GUN_SEL_PISTOL,	45, 6, 5, 2, true }, // 
+	{ WEAPON_COLT45,		"Colt M1911",				AMMO_TYPE_J, 	10, E_GUN_SEL_PISTOL,	55, 6, 5, 4, true }, // 
+
+	{ WEAPON_SILENCED,		"SIG P226 Silenced",		AMMO_TYPE_A, 	10, E_GUN_SEL_PISTOL,	60, 5, 5, 5, true }, //  2250
+	{ WEAPON_SILENCED,		"SW1991 Silenced",			AMMO_TYPE_B, 	10, E_GUN_SEL_PISTOL,	75, 5, 5, 7, true }, // 2650
+	{ WEAPON_SILENCED,		"H&K USP Silenced",			AMMO_TYPE_B, 	10, E_GUN_SEL_PISTOL,	75, 5, 5, 7, true }, // 2650
+	{ WEAPON_SILENCED,		"Ruger P95 Silenced",		AMMO_TYPE_A, 	10, E_GUN_SEL_PISTOL,	60, 5, 5, 5, true }, //  2250
+
+	{ WEAPON_DEAGLE,		"Llama M82",				AMMO_TYPE_I, 	7, E_GUN_SEL_PISTOL,	90, 7, 7, 10, true }, 
+	{ WEAPON_DEAGLE,		"S&W Model 29",				AMMO_TYPE_C, 	7, E_GUN_SEL_PISTOL,	90, 7, 7, 10, true }, 
+	{ WEAPON_DEAGLE,		"Ballester-Molina",			AMMO_TYPE_B, 	7, E_GUN_SEL_PISTOL,	80, 6, 7, 9, true }, 
+	{ WEAPON_DEAGLE,		"Ruger Blackhawk",			AMMO_TYPE_C, 	7, E_GUN_SEL_PISTOL,	90, 5, 7, 9, true },  
+	
+	// SMG	
+	{ WEAPON_UZI,			"Uzi",						AMMO_TYPE_A,	36, E_GUN_SEL_SMG,		115, 10, 10, 8, true }, // 4100
+	{ WEAPON_UZI,			"Socimi Type 821", 			AMMO_TYPE_A,	36, E_GUN_SEL_SMG,		115, 10, 10, 8, true }, // 4100
+	{ WEAPON_UZI,			"MAC-11",					AMMO_TYPE_A,	36, E_GUN_SEL_SMG,		130, 10, 10, 10, true }, // 4500
+	{ WEAPON_UZI,			"MAC-10", 					AMMO_TYPE_A,	36, E_GUN_SEL_SMG,		130, 10, 10, 10, true }, // 4500
+	
+	{ WEAPON_TEC9,			"PP-90",					AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		115, 10, 10, 9, true }, // 4300
+	{ WEAPON_TEC9,			"Skorpion",					AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		115, 10, 10, 9, true }, // 4300
+	{ WEAPON_TEC9,			"Beretta M12",				AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		115, 10, 10, 9, true }, // 4300
+	{ WEAPON_TEC9,			"KGP-9",					AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		115, 10, 10, 9, true }, // 4300
+	
+	{ WEAPON_MP5,			"FN P90",					AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		150, 12, 12, 10, false }, // 5000
+	{ WEAPON_MP5,			"MP 40",					AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		150, 12, 12, 10, true }, // 5000
+	{ WEAPON_MP5,			"PP-19 Bizon",				AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		150, 12, 12, 10, true }, // 5000
+	{ WEAPON_MP5,			"H&K MP5",					AMMO_TYPE_A,	30, E_GUN_SEL_SMG,		150, 12, 12, 10, false }, // 5000
+
+	// Assault Riffles
+	{ WEAPON_AK47,			"AEK-971", 					AMMO_TYPE_I,	30, E_GUN_SEL_ASSAULT,	180, 15, 15, 15, true }, // 6750
+	{ WEAPON_AK47,			"AK-74", 					AMMO_TYPE_I,	30, E_GUN_SEL_ASSAULT,	180, 15, 15, 15, true }, // 6750
+	{ WEAPON_AK47,			"AKM", 						AMMO_TYPE_I,	30, E_GUN_SEL_ASSAULT,	180, 15, 15, 15, true }, // 6750
+	{ WEAPON_AK47,			"AK-47", 					AMMO_TYPE_I,	30, E_GUN_SEL_ASSAULT,	180, 15, 15, 15, true }, // 6750
+
+	{ WEAPON_M4,			"M-16", 					AMMO_TYPE_J,	30, E_GUN_SEL_ASSAULT,	200, 18, 18, 18, false }, // 8100
+	{ WEAPON_M4,			"HK33", 					AMMO_TYPE_J,	30, E_GUN_SEL_ASSAULT,	200, 18, 18, 18, true }, // 8100
+	{ WEAPON_M4,			"FN FNC", 					AMMO_TYPE_J,	30, E_GUN_SEL_ASSAULT,	200, 18, 18, 18, true }, // 8100
+	{ WEAPON_M4,			"Norinco CQ", 				AMMO_TYPE_J,	30, E_GUN_SEL_ASSAULT,	200, 18, 18, 18, true }, // 8100
+
+	// Shotguns
+	{ WEAPON_SHOTGUN, 		"Mossberg 500", 			AMMO_TYPE_H,	12, E_GUN_SEL_SHOTGUN,	175, 20, 20, 15, true }, // 8000
+  	{ WEAPON_SHOTGUN, 		"Remington 870", 			AMMO_TYPE_H,	12, E_GUN_SEL_SHOTGUN,	175, 20, 20, 15, false }, // 8000
+  	{ WEAPON_SHOTGUN, 		"Winchester 1200", 			AMMO_TYPE_H,	12, E_GUN_SEL_SHOTGUN,	175, 20, 20, 15, true }, // 8000
+  	{ WEAPON_SHOTGUN, 		"Remington 887", 			AMMO_TYPE_H,	12, E_GUN_SEL_SHOTGUN,	175, 20, 20, 15, false }, // 8000
+
+  	{ WEAPON_SHOTGSPA, 		"USAS-12", 					AMMO_TYPE_H,	7, E_GUN_SEL_SHOTGUN,	200, 20, 20, 20, false }, // 9000
+  	{ WEAPON_SHOTGSPA, 		"SPAS-15", 					AMMO_TYPE_H,	7, E_GUN_SEL_SHOTGUN,	200, 20, 20, 20, false }, // 9000
+  	{ WEAPON_SHOTGSPA, 		"Saiga-12", 				AMMO_TYPE_H,	7, E_GUN_SEL_SHOTGUN,	200, 20, 20, 20, false }, // 9000
+  	{ WEAPON_SHOTGSPA, 		"M1216", 					AMMO_TYPE_H,	7, E_GUN_SEL_SHOTGUN,	200, 20, 20, 20, false }, // 9000
+		
+  	{ WEAPON_SAWEDOFF, 		"Ithaca 37", 				AMMO_TYPE_H,	2, E_GUN_SEL_SHOTGUN,	250, 25, 30, 20, true }, // 11000
+  	{ WEAPON_SAWEDOFF, 		"KS-23", 					AMMO_TYPE_H,	2, E_GUN_SEL_SHOTGUN,	250, 25, 30, 20, true }, // 11000
+  	{ WEAPON_SAWEDOFF, 		"MAG-7", 					AMMO_TYPE_H,	2, E_GUN_SEL_SHOTGUN,	250, 25, 30, 20, true }, // 11000
+
+  	// Bolt Action Rifles
+	{ WEAPON_RIFLE, 		"M1903 Springfield", 		AMMO_TYPE_D,	5, E_GUN_SEL_BOLT_ACTION,	275, 20, 25, 25, true  }, //10750
+	{ WEAPON_RIFLE, 		"M1917 Enfield", 			AMMO_TYPE_D,	5, E_GUN_SEL_BOLT_ACTION,	275, 20, 25, 25, true  }, //10750
+	{ WEAPON_RIFLE, 		"Mosin-Nagant", 			AMMO_TYPE_D,	5, E_GUN_SEL_BOLT_ACTION,	275, 20, 25, 25, true  }, //10750
+	{ WEAPON_RIFLE, 		"Karabiner 98k", 			AMMO_TYPE_D,	5, E_GUN_SEL_BOLT_ACTION,	275, 20, 25, 25, true  }, //10750
+	
+	{ WEAPON_SNIPER, 		"Remington 700", 			AMMO_TYPE_F, 	5, E_GUN_SEL_BOLT_ACTION,	300, 25, 25, 25, false  }, // 11250
+	{ WEAPON_SNIPER, 		"Winchester 70", 			AMMO_TYPE_F, 	5, E_GUN_SEL_BOLT_ACTION,	300, 25, 25, 25, true  }, // 11250
+	{ WEAPON_SNIPER, 		"Browning A-Bolt", 			AMMO_TYPE_G, 	5, E_GUN_SEL_BOLT_ACTION,	300, 25, 25, 25, true  }, // 11250
+	{ WEAPON_SNIPER, 		"Ruger M77",		 		AMMO_TYPE_G, 	5, E_GUN_SEL_BOLT_ACTION,	300, 25, 25, 25, true  }, //  11250
+	
+
+	{ WEAPON_CAMERA, 		"Camera",					AMMO_TYPE_NONE,	1500, E_GUN_SEL_MELEE,	30, 1, 1, 1, false  }, // 450
+	{ WEAPON_COLT45,		"Emmet's Colt",				AMMO_TYPE_A, 	24,   E_GUN_SEL_PISTOL,	45, 3, 2, 2, false  }, // 1000
+	{ WEAPON_SILENCED,		"Tazer",					AMMO_TYPE_A, 	10, E_GUN_SEL_PISTOL,	60, 5, 5, 5, false  }, //  2250
+	{ WEAPON_FIREEXTINGUISHER,	"Fire Extinguisher", 	AMMO_TYPE_NONE,	15000, E_GUN_SEL_MELEE,	30, 0, 1, 0, true }, // 150
+
+	// New pistol for cops
+	{ WEAPON_DEAGLE,		"S&W Model 4566",			AMMO_TYPE_B, 	7, E_GUN_SEL_PISTOL,	90, 7, 7, 10, false }, // for pd only
+
+	// New troll weapon
+	{ 38,		"Hades's Six Shooter",			AMMO_TYPE_B, 	7, E_GUN_SEL_NONE,	90, 7, 7, 10, false }, // for hades only
+	{ 27,		"Mercer's Kiss",			AMMO_TYPE_NONE,	7, E_GUN_SEL_SHOTGUN,	200, 20, 20, 20, false }, // for spooky
+
+	// DEA Pistol & SMG
+	{ WEAPON_DEAGLE,		"SIG P229",					AMMO_TYPE_K,	7, E_GUN_SEL_PISTOL,	90, 7, 7, 10, false }, // for DEA only
+	{ WEAPON_MP5,			"FN P90 USG",				AMMO_TYPE_L,	30, E_GUN_SEL_SMG,		150, 12, 12, 10, false }, // for DEA only
+
+	// Civilian PF Weapons
+	{ WEAPON_COLT45,		"Kel-Tec P11",				AMMO_TYPE_A,	24, E_GUN_SEL_PISTOL,	45, 3, 2, 2, false  },
+	{ WEAPON_DEAGLE,		"Ruger P90",				AMMO_TYPE_B,	7, E_GUN_SEL_PISTOL,	90, 7, 7, 10, false }
+} ;

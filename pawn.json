@@ -1,0 +1,84 @@
+{
+	"user": "TommyB123",
+	"repo": "gamemode",
+	"entry": "gamemodes\\gamemode.pwn",
+	"output": "gamemodes\\gamemode.amx",
+	"dependencies": [
+		"pawn-lang/samp-stdlib",
+		"Zeex/samp-plugin-crashdetect:v4.21",
+		"Y-Less/sscanf:v2.13.8",
+		"Sreyas-Sreelal/samp-bcrypt:0.4.1",
+		"oscar-broman/strlib",
+		"samp-incognito/samp-streamer-plugin:v2.9.6",
+		"Southclaws/zcmd",
+		"TommyB123/progress2",
+		"Coystark/MenuStore",
+		"Pottus/ColAndreas:1.5.0",
+		"Southclaws/pawn-fsutil:1.3.0",
+		"katursis/Pawn.Regex:1.2.3",
+		"katursis/Pawn.RakNet:1.3.0",
+		"oscar-broman/SKY:2.3.1",
+		"pBlueG/SA-MP-MySQL:R41-4",
+		"pawn-lang/YSI-Includes:v5.10.0006"
+	],
+	"local": true,
+	"runtime": {
+		"version": "0.3.DL",
+		"mode": "server",
+		"rcon_password": "password",
+		"port": 7777,
+		"hostname": "Local Testing",
+		"maxplayers": 100,
+		"language": "",
+		"mapname": "San Andreas",
+		"weburl": "www.sa-mp.com",
+		"gamemodetext": "Unknown",
+		"announce": true,
+		"lanmode": false,
+		"query": true,
+		"rcon": false,
+		"logqueries": false,
+		"sleep": 5,
+		"maxnpc": 0,
+		"stream_rate": 1000,
+		"stream_distance": 200,
+		"onfoot_rate": 30,
+		"incar_rate": 30,
+		"weapon_rate": 30,
+		"chatlogging": true,
+		"timestamp": true,
+		"messageholelimit": 3000,
+		"messageslimit": 500,
+		"ackslimit": 3000,
+		"playertimeout": 10000,
+		"minconnectiontime": 0,
+		"lagcompmode": 1,
+		"connseedtime": 300000,
+		"db_logging": false,
+		"db_log_queries": false,
+		"conncookies": true,
+		"cookielogging": false,
+		"output": true,
+		"extra": {
+			"crashdetect_log": "crashdetectinfo.txt",
+			"gamemode0": "gamemode",
+			"useartwork": "1"
+		}
+	},
+	"builds": [
+		{
+			"name": "main",
+			"args": [
+				"-;+",
+				"-(+",
+				"-d3"
+			],
+			"includes": [
+				"legacy"
+			],
+			"compiler": {
+				"version": "3.10.10"
+			}
+		}
+	]
+}
