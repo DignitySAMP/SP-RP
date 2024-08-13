@@ -29,7 +29,7 @@ Special thanks:
 
 ## Summary
 
-This is plug and play for any competent developer. Uses sampctl, database structure is provided, and the script in it's entirety and the models required to run, as is. No support will be given on how to run it. If you know what you're doing, you will have no issue with it. I started documenting the code about a month ago, but a lot of features are still lacking crucial documentation. Good luck deciphering it.
+This is plug and play for any competent developer. Uses sampctl for plugin management. The database structure is provided as well as the models required to run. No support will be given on how to run it. If you know what you're doing, you will have no issue with it. I started documenting the code about a month ago, but a lot of features are still lacking crucial documentation. Good luck deciphering it.
 
 There are minor bugs but this ran in production for over 5 years. It should be stable, although if you're looking to host it, invest in a dedicated server with at least 3gb of ram and a shit ton of CPU power. The vehicle module is severely outdated and clogs up resources like crazy. 
 
@@ -195,7 +195,7 @@ Animations
  - Sorted anims with options and single animations per file
  - "Particle" animations that have effects such as /piss, /shit, /puke, /shakebottle
  - Anti abuse /stopanim (also detects when it's being used to avoid stuns in melee battles)
- - Thanks to SL-RP (Emmet_, Reyo, niCe, BigBear)
+ - Thanks to Emmet_, Reyo, niCe, BigBear amd DamianC (yoinked some LS-RP anims)
 
 Admin
  - Hundreds of admin commands for everything imaginable
