@@ -31,7 +31,7 @@ Special thanks:
 
 This is plug and play for any competent developer. Uses sampctl for plugin management. The database structure is provided as well as the models required to run. No support will be given on how to run it. If you know what you're doing, you will have no issue with it. I started documenting the code about a month ago, but a lot of features are still lacking crucial documentation. Good luck deciphering it.
 
-There are minor bugs but this ran in production for over 5 years. It should be stable, although if you're looking to host it, invest in a dedicated server with at least 3gb of ram and a shit ton of CPU power. The vehicle module is severely outdated and clogs up resources like crazy. 
+There are minor bugs but this ran in production for over 5 years. It should be stable, although if you're looking to host it, invest in a dedicated server with at least 3gb of ram and a shit ton of CPU power. ~~The vehicle module is severely outdated and clogs up resources like crazy.~~ The vehicle module is pretty bad, but commit ce3fb3105057dfb25a027d9824b6c0f97950368d and 69a4128b3ec070163073cd3381e16b1516db9b92 contain changes that drastically improves the performance. Right now, a lot of vehicle natives still use for loops to get hold of data which is quite bad, so they should be converted to an iterator with some form of caching before it should be considered OK.
 
 I'd say 80-85% of the script is dynamic, meaning it's saved on MySQL. It has UCP support, the UCP intended for use you can find here: https://github.com/rzrusu/SPRP-UCP made by @rzrusu. I'd recommend against using the gamemode as a base, but with some love, it's pretty much the ideal script for any medium level roleplay server.
 
