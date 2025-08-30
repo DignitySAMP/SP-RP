@@ -87,12 +87,8 @@ enum VehicleData {
 
 	E_VEHICLE_IMPOUNDED, // For impound
 }
-#if defined MAX_VEHICLES 
-	#undef MAX_VEHICLES 
-#endif
-#define MAX_VEHICLES (12000) // default: 2000
-
 new Vehicle [ MAX_VEHICLES ] [ VehicleData ]; //, vehicleCount ; 
+#warning add iterators here some day
 
 enum VehicleVarData {
 
@@ -360,8 +356,7 @@ Vehicle_SetDoorsEngineStatus(index ) {
 	}
 }
 
-Vehicle_LoadEntities() {
-
+Vehicle_ResetEnumerator() {
 	for ( new i, j = sizeof ( Vehicle ); i < j ; i ++ ) {
 
 		Vehicle [ i ] [ E_VEHICLE_SQLID ] = -1 ;
@@ -369,9 +364,20 @@ Vehicle_LoadEntities() {
 		VehicleVar [ i ] [ E_VEHICLE_RENTEDBY ] = INVALID_PLAYER_ID ;
 		VehicleVar [ i ] [ E_VEHICLE_RENTUNIX ] = 0 ;
 	}
+}
 
-	print(" * [VEHICLE] Loading all vehicles...");
+Vehicle_LoadEntities(ownerid = -1) {
+	new query[96];
+	if(ownerid == -1) {
+		print(" * [VEHICLE] Loading all static vehicles...");
+		format(query, sizeof(query), "SELECT * FROM vehicles WHERE vehicle_type != 3");
+	}
+	else {
+		format(query, sizeof(query), "SELECT * FROM vehicles WHERE vehicle_type == 3 AND vehicle_owner = %i", ownerid); 
+		printf(" * [VEHICLE] Loading all vehicles for ownerid %i", ownerid);
+	}
 
+	
 	inline Vehicle_OnDataLoad() {
 		for (new i = 0, r = cache_num_rows(); i < r; ++i) {
 			cache_get_value_name_int (i, "vehicle_sqlid", Vehicle [ i ] [ E_VEHICLE_SQLID ]);
@@ -406,7 +412,6 @@ Vehicle_LoadEntities() {
 			}
 
 			cache_get_value_name_int(i, "vehicle_paintjob", Vehicle [ i ] [ E_VEHICLE_PAINTJOB ]);
-
 			cache_get_value_name_float ( i, "vehicle_health", Vehicle [ i ] [ E_VEHICLE_HEALTH ]);
 
 			cache_get_value_name_int(i, "vehicle_dmg_panels", Vehicle [ i ] [ E_VEHICLE_DMG_PANELS ]);
@@ -472,9 +477,91 @@ Vehicle_LoadEntities() {
 		printf(" * [VEHICLE] Loaded %d vehicles.", cache_num_rows() ) ;
 	}
 
-	MySQL_TQueryInline(mysql, using inline Vehicle_OnDataLoad, "SELECT * FROM vehicles");
+	MySQL_TQueryInline(mysql, using inline Vehicle_OnDataLoad, query);
 
 	return true ;
+}
+
+// when a player quits, remove the vehicle from the enumerator
+Vehicle_RemoveFromEnum(ownerid) {
+
+	new found_vehicle = 0;
+	for(new i, j = sizeof(Vehicle); i < j; i ++) {
+		
+		if(found_vehicle >= Player_GetOwnedVehicles(playerid)) {
+			// no need to keep the loop going when the max possible owned vehicles of this owner has been reached
+			break;
+		}
+
+		if(Vehicle[i][E_VEHICLE_OWNER] == ownerid) {
+			found_vehicle ++;
+
+			Vehicle_DestroyStaticEntities(Vehicle[i][E_VEHICLE_ID]);
+			Vehicle [ i ] [ E_VEHICLE_SQLID ] = -1 ;
+
+			VehicleVar [ i ] [ E_VEHICLE_RENTEDBY ] = INVALID_PLAYER_ID ;
+			VehicleVar [ i ] [ E_VEHICLE_RENTUNIX ] = 0 ;
+
+			if(IsValidVehicle(Vehicle[i][E_VEHICLE_ID])) {
+				DestroyVehicle(Vehicle[i][E_VEHICLE_ID]);
+				Vehicle[i][E_VEHICLE_ID] = 1;
+			}
+		}
+	}
+
+	return true;
+}
+
+// should delete all attached objects, labels, ...
+Vehicle_DestroyStaticEntities(vehicleid) {
+	new veh_enum_id = Vehicle_GetEnumID ( vehicleid );
+
+	if ( veh_enum_id == -1 ) 
+	{
+		return true ;
+	}
+
+	VehicleVar[veh_enum_id][E_VEHICLE_RECENT_DEATH] = true;
+
+	if ( IsValidDynamic3DTextLabel(Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] )) {
+		DestroyDynamic3DTextLabel(Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ;
+	}
+
+	if ( IsValidDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ) {
+		DestroyDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ;
+	}
+
+	Vehicle_ClearTruckerVariables(veh_enum_id);
+
+	foreach(new playerid: Player ) {
+		if ( IsPlayerLogged ( playerid ) && IsPlayerSpawned ( playerid ) ) {
+			if ( PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_CARID ] == Vehicle [ veh_enum_id ] [ E_VEHICLE_ID ] ) {
+
+				GameTextForPlayer(playerid, "~r~Mission Failed~n~~w~The chopshop car has been destroyed.", 5000, 6);
+		 		PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_PAYOUT ] = 0 ;
+			 	PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_CARID ] = INVALID_VEHICLE_ID ;
+				PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_DROPPOINT ] = -1 ;	
+			}
+
+			if ( PlayerVar [ playerid ] [ E_PLAYER_GARBAGEJOB_VEHICLE ] == Vehicle [ veh_enum_id ] [ E_VEHICLE_ID ] ) {
+
+				GameTextForPlayer(playerid, "~r~Mission Failed~n~~w~The chopshop car has been destroyed.", 5000, 6);
+				GarbageJob_CancelData(playerid) ;
+			}
+		}
+	}
+
+	if (  Vehicle [ veh_enum_id ] [ E_VEHICLE_TYPE] == E_VEHICLE_TYPE_RENTAL ) {
+		Vehicle [veh_enum_id] [ E_VEHICLE_OWNER ] = INVALID_PLAYER_ID ;
+	}
+	
+	if ( IsValidDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ) {
+		DestroyDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ;
+	}
+
+	// spooky's siren hook attachment
+	SOLS_ResetVehicleSirens(vehicleid);
+	return true;
 }
 
 Vehicle_GetFreeID() {

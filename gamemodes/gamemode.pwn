@@ -285,6 +285,7 @@ main() {
 	Attachments_LoadCustomModels();
 
 	Fine_LoadLabel() ;
+	Vehicle_ResetEnumerator();
 	Vehicle_LoadEntities ();
 	SavedFurni_LoadEntities();
 	Tune_LoadEntities() ;

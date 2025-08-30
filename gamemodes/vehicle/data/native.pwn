@@ -76,56 +76,7 @@ public OnVehicleSpawn (vehicleid) {
 
 public OnVehicleDeath(vehicleid, killerid) {
 
-	new veh_enum_id = Vehicle_GetEnumID ( vehicleid );
-
-	if ( veh_enum_id == -1 ) 
-	{
-		return true ;
-	}
-
-	VehicleVar[veh_enum_id][E_VEHICLE_RECENT_DEATH] = true;
-
-	if ( IsValidDynamic3DTextLabel(Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] )) {
-
-		DestroyDynamic3DTextLabel(Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ;
-	}
-
-	if ( IsValidDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ) {
-
-		DestroyDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ;
-	}
-
-	Vehicle_ClearTruckerVariables(veh_enum_id);
-
-	foreach(new playerid: Player ) {
-		if ( IsPlayerLogged ( playerid ) && IsPlayerSpawned ( playerid ) ) {
-			if ( PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_CARID ] == Vehicle [ veh_enum_id ] [ E_VEHICLE_ID ] ) {
-
-				GameTextForPlayer(playerid, "~r~Mission Failed~n~~w~The chopshop car has been destroyed.", 5000, 6);
-		 		PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_PAYOUT ] = 0 ;
-			 	PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_CARID ] = INVALID_VEHICLE_ID ;
-				PlayerVar [ playerid ] [ E_PLAYER_CHOPSHOP_DROPPOINT ] = -1 ;	
-			}
-
-			if ( PlayerVar [ playerid ] [ E_PLAYER_GARBAGEJOB_VEHICLE ] == Vehicle [ veh_enum_id ] [ E_VEHICLE_ID ] ) {
-
-				GameTextForPlayer(playerid, "~r~Mission Failed~n~~w~The chopshop car has been destroyed.", 5000, 6);
-				GarbageJob_CancelData(playerid) ;
-			}
-		}
-	}
-
-	if (  Vehicle [ veh_enum_id ] [ E_VEHICLE_TYPE] == E_VEHICLE_TYPE_RENTAL ) {
-
-		Vehicle [veh_enum_id] [ E_VEHICLE_OWNER ] = INVALID_PLAYER_ID ;
-	}
-
-	
-	if ( IsValidDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ) {
-
-		DestroyDynamic3DTextLabel( Vehicle [ veh_enum_id ] [ E_VEHICLE_LABEL ] ) ;
-	}
-
+	Vehicle_DestroyStaticEntities(vehicleid);
 	
 	#if defined veh_OnVehicleDeath
 		return veh_OnVehicleDeath(vehicleid, killerid);

@@ -424,6 +424,9 @@ Account_LoadCharacterData(playerid, character_id) {
 			//Halloween_LoadPlayerEntities(playerid); // Holiday Event: Halloween
 			//Christmas_LoadPlayerEntities(playerid); // Holiday Event: Christmas
 
+			// Loading vehicles
+			Vehicle_LoadEntities(Character[playerid][E_CHARACTER_ID]);
+
 			// Drugs loading
 			Drugs_LoadEntity_Containers(playerid) ;
 			Drugs_LoadEntities_PlayerDrugs(playerid) ;
