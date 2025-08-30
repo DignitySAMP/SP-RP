@@ -1,6 +1,8 @@
 
 Player_GetOwnedVehicles ( playerid ) {
 	#warning this should be cached
+	if(playerid == INVALID_PLAYER_ID) return -1;
+
 	new count = 0 ;
 
 	for ( new i, j = sizeof ( Vehicle ); i < j ; i ++ ) {
@@ -16,6 +18,15 @@ Player_GetOwnedVehicles ( playerid ) {
 	}
 
 	return count ;
+}
+
+Player_GetPidFromOwnerid(ownerid) {
+	foreach(new playerid: Player) {
+		if(Character[playerid][E_CHARACTER_ID] == ownerid) {
+			return playerid;
+		}
+	}
+	return INVALID_PLAYER_ID;
 }
 
 Player_GetMaxOwnedVehicles(playerid) {

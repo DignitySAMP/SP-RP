@@ -482,13 +482,14 @@ Vehicle_LoadEntities(ownerid = -1) {
 	return true ;
 }
 
+
 // when a player quits, remove the vehicle from the enumerator
 Vehicle_RemoveFromEnum(ownerid) {
 
 	new found_vehicle = 0;
 	for(new i, j = sizeof(Vehicle); i < j; i ++) {
-		
-		if(found_vehicle >= Player_GetOwnedVehicles(playerid)) {
+
+		if(found_vehicle >= Player_GetOwnedVehicles(Player_GetPidFromOwnerid(ownerid))) {
 			// no need to keep the loop going when the max possible owned vehicles of this owner has been reached
 			break;
 		}

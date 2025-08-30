@@ -301,32 +301,3 @@ Anticheat_Tick(playerid) {
 
     return true ;
 }
-
-
-// block mapstealers
-
-CMD:startrecording(playerid, params[]){
-
-    new string [ 192 ];
-    format(string, sizeof(string), "[!!!] [AdmWarn] (%d) %s has just tried a common map stealer command. They have been kicked as a precaution.", playerid, ReturnMixedName(playerid));
-    SendAdminMessage(string);
-
-    AddLogEntry ( playerid, LOG_TYPE_SCRIPT, "has been kicked for trying a map stealer command.");
-    ProxDetectorEx(playerid, 45.0, COLOR_ORANGE, "[AntiCheat]:", "has been kicked by the anticheat.", .showid = true);
-
-    Kick(playerid);
-
-    return true;
-}
-
-CMD:stoprecording(playerid, params[]){
-    return cmd_startrecording(playerid, params);
-}
-
-CMD:savemodels(playerid, params[]){
-    return cmd_startrecording(playerid, params);
-}
-
-CMD:saveremovebuildings(playerid, params[]){
-    return cmd_startrecording(playerid, params);
-}

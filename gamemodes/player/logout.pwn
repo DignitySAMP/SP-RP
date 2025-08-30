@@ -189,6 +189,8 @@ static DisconQueryStr[512];
 
 CloseConnection(playerid, reason) 
 {
+	Vehicle_RemoveFromEnum(Character[playerid][E_CHARACTER_ID]); // yeet their vehicles
+
 	// * All the old horrible unhooked systems (don't put anything that saves stuff here)
 	Basketball_OnPlayerDisconnect(playerid) ;
 	OnDestroyPlayerTextdraws(playerid);

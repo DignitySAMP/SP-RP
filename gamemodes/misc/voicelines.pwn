@@ -3,6 +3,7 @@ enum {
 	VOICE_LINE_BALLAS,
 	VOICE_LINE_VLA,
 	VOICE_LINE_VAGOS,
+	VOICE_LINE_RIFAS,
 	VOICE_LINE_LSPD
 } ;
 
@@ -19,10 +20,10 @@ new VL_Families [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_FAMILIES, 103100, "Hey get in the car fools! " },
 	{ VOICE_LINE_FAMILIES, 103104, "Proud of you boy you have him down." },
 	{ VOICE_LINE_FAMILIES, 103105, "Man I hope nobody got hurt." },
-	{ VOICE_LINE_FAMILIES, 103113, "Yeaaah baby ! " },
-	{ VOICE_LINE_FAMILIES, 103118, "I can't go back to jail ! " },
+	{ VOICE_LINE_FAMILIES, 103113, "Yeaaah baby! " },
+	{ VOICE_LINE_FAMILIES, 103118, "I can't go back to jail! " },
 	{ VOICE_LINE_FAMILIES, 103120, "Say, you must be high now ?" },
-	{ VOICE_LINE_FAMILIES, 103122, "Hey man comeon man COME ONNN." },
+	{ VOICE_LINE_FAMILIES, 103122, "Hey man come on man COME ONNN." },
 	{ VOICE_LINE_FAMILIES, 103130, "Hey man do I look like a bitch ?" },
 	{ VOICE_LINE_FAMILIES, 103131, "I ain't crazy just cold blooded ! " },
 	{ VOICE_LINE_FAMILIES, 103135, "I kick yo ass mane !" },
@@ -144,12 +145,12 @@ new VL_Families [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_FAMILIES, 103011, "L-S-V Ain't shit ! " },
 	{ VOICE_LINE_FAMILIES, 103013, "Aztecas- KISS MA ASS ! " },
 	{ VOICE_LINE_FAMILIES, 103015, "Hey Aztecas, FUCK YOU ! " },
-	{ VOICE_LINE_FAMILIES, 103017, "I ain't scared no Ass-Lickers." },
+	{ VOICE_LINE_FAMILIES, 103017, "I ain't scared of no Ass-Lickers." },
 	{ VOICE_LINE_FAMILIES, 103018, "Hey man I am not scared of you." },
 	{ VOICE_LINE_FAMILIES, 103019, "I didn't do nothing man." },
 	{ VOICE_LINE_FAMILIES, 103020, "Hey Mr.Officer I didn't do shit." },
 	{ VOICE_LINE_FAMILIES, 103021, "Hey man shut up you boring me mane." },
-	{ VOICE_LINE_FAMILIES, 103025, "Hey whats up with that I thought we was folk { ? " },
+	{ VOICE_LINE_FAMILIES, 103025, "Hey whats up with that I thought we was folk ? " },
 	{ VOICE_LINE_FAMILIES, 103036, "They all MINE." },
 	{ VOICE_LINE_FAMILIES, 103039, "Welcome to GROVE STREET ! " },
 	{ VOICE_LINE_FAMILIES, 103043, "ITS GROVE 4 LIFE ! " },
@@ -160,7 +161,7 @@ new VL_Families [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_FAMILIES, 103057, "Hey whats going on mane, move outta way ! " },
 	{ VOICE_LINE_FAMILIES, 103059, "Hey Playboy, MOVE!" },
 	{ VOICE_LINE_FAMILIES, 103061, "Hey let me get swallow of that." },
-	{ VOICE_LINE_FAMILIES, 103062, "Hit me up with some of that,straight up." },
+	{ VOICE_LINE_FAMILIES, 103062, "Hit me up with some of that,s traight up." },
 	{ VOICE_LINE_FAMILIES, 103063, "Say mane let me get a squeak." },
 	{ VOICE_LINE_FAMILIES, 102700, "HELL YEAH FAMALAYY' " },
 	{ VOICE_LINE_FAMILIES, 102699, "Geah ! Thats how Fam' doin it." },
@@ -199,7 +200,7 @@ new VL_Families [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_FAMILIES, 102929, "I got the hood on lock." },
 	{ VOICE_LINE_FAMILIES, 102931, "Bitch better have my money." },
 	{ VOICE_LINE_FAMILIES, 102932, "My set ain't for bustas mane." },
-	{ VOICE_LINE_FAMILIES, 102934, "Mane you better left this shit at the { junkyard!" },
+	{ VOICE_LINE_FAMILIES, 102934, "Mane you better left this shit at the junkyard!" },
 	{ VOICE_LINE_FAMILIES, 102937, "Mane you look like a fuckin clown! Dude." },
 	{ VOICE_LINE_FAMILIES, 102938, "Mane you rocking some corny shit today mane!" },
 	{ VOICE_LINE_FAMILIES, 102939, "Mane who told you that shit was G dogg !?" },
@@ -217,6 +218,35 @@ new VL_Families [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_FAMILIES, 102992, "Mane fuck you mane." },
 	{ VOICE_LINE_FAMILIES, 102993, "Ah-. you MOTHER FUCKER!" },
 	{ VOICE_LINE_FAMILIES, 102997, "Ah dog you be trippin! " },
+	{ VOICE_LINE_FAMILIES, 107600, "Ey Balla fools!" },
+    { VOICE_LINE_FAMILIES, 107601, "Balla bitches" },
+    { VOICE_LINE_FAMILIES, 107602, "Step up Balla bitches" },
+    { VOICE_LINE_FAMILIES, 107610, "The fuck you doing man?" },
+    { VOICE_LINE_FAMILIES, 107613, "Hol'on homie!" },
+    { VOICE_LINE_FAMILIES, 107620, "You got'a prob'?" },
+    { VOICE_LINE_FAMILIES, 107621, "You wanna say sum'?" },
+    { VOICE_LINE_FAMILIES, 107638, "Lets roll!" },
+    { VOICE_LINE_FAMILIES, 107641, "Slow down, fool." },
+    { VOICE_LINE_FAMILIES, 107673, "Watch out!" },
+    { VOICE_LINE_FAMILIES, 107679, "Heads down!" },
+    { VOICE_LINE_FAMILIES, 107682, "Get down!" },
+    { VOICE_LINE_FAMILIES, 107684, "Time to beat up another fool" },
+    { VOICE_LINE_FAMILIES, 107685, "You dead meat" },
+    { VOICE_LINE_FAMILIES, 107686, "Im talking to you mother fucker" },
+    { VOICE_LINE_FAMILIES, 107687, "Taste my knuckles" },
+    { VOICE_LINE_FAMILIES, 107690, "You think you can take me?" },
+    { VOICE_LINE_FAMILIES, 107692, "You think you can take me?" },
+    { VOICE_LINE_FAMILIES, 107693, "You think you are killa?" },
+    { VOICE_LINE_FAMILIES, 107698, "Break ya self, fool!" },
+    { VOICE_LINE_FAMILIES, 107701, "Nice try, but not today" },
+    { VOICE_LINE_FAMILIES, 107702, "Wrong move mofoka" },
+    { VOICE_LINE_FAMILIES, 107708, "Time to die, balla bitch" },
+    { VOICE_LINE_FAMILIES, 107709, "Pop those Ball-sucks" },
+    { VOICE_LINE_FAMILIES, 107710, "Grove Street justice!" },
+    { VOICE_LINE_FAMILIES, 107715, "You think you are OG, huh?" },
+    { VOICE_LINE_FAMILIES, 107719, "You want the whole clip?" },
+    { VOICE_LINE_FAMILIES, 107724, "Die mother fucker, die!" },
+    { VOICE_LINE_FAMILIES, 107725, "Man, you made the biggest misstake" },
 	{ VOICE_LINE_FAMILIES, 102999, "What the FUCK is wrong with chu!?" }
 };
 
@@ -274,7 +304,7 @@ new VL_Ballas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_BALLAS, 101198, "You banging fool ?" },
 	{ VOICE_LINE_BALLAS, 100480, "Oh you wanna be though for me?" },
 	{ VOICE_LINE_BALLAS, 100481, "I said where you from?" },
-	{ VOICE_LINE_BALLAS, 100484, "You better let someone know where you from { homeboy." },
+	{ VOICE_LINE_BALLAS, 100484, "You better let someone know where you from homeboy." },
 	{ VOICE_LINE_BALLAS, 100485, "Cover me homie im going in" },
 	{ VOICE_LINE_BALLAS, 100486, "COVER MY ASS GET THAT MOFUKA" },
 	{ VOICE_LINE_BALLAS, 100487, "Im the hero around this motherfucka" },
@@ -294,7 +324,7 @@ new VL_Ballas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_BALLAS, 100503, "MY RIDE FOOL " },
 	{ VOICE_LINE_BALLAS, 100505, "POLICE TRYNA KILL ME" },
 	{ VOICE_LINE_BALLAS, 100506, "EY MAN WHAT THE HELLS GOING ON MAN?" },
-	{ VOICE_LINE_BALLAS, 100507, "WHASS GOIN ON HERE MAN WHY Y'ALL TRYNA KILL { ME?" },
+	{ VOICE_LINE_BALLAS, 100507, "WHASS GOIN ON HERE MAN WHY Y'ALL TRYNA KILL ME?" },
 	{ VOICE_LINE_BALLAS, 100508, "MAN SOMEONE VIDEO THIS SHIT!" },
 	{ VOICE_LINE_BALLAS, 100512, "DONT LET ME CATCH YOU!" },
 	{ VOICE_LINE_BALLAS, 100513, "OH ITS ON NOW!" },
@@ -351,7 +381,7 @@ new VL_Ballas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_BALLAS, 100588, "I aint scared of you, you still a bitch!" },
 	{ VOICE_LINE_BALLAS, 100590, "What y'all talking about?" },
 	{ VOICE_LINE_BALLAS, 100593, "EY MAN YOU BETTER LEND ME A GUN UH?" },
-	{ VOICE_LINE_BALLAS, 100596, "You dont wanna hurt no body, I dont wanna { hurt you." },
+	{ VOICE_LINE_BALLAS, 100596, "You dont wanna hurt no body, I dont wanna hurt you." },
 	{ VOICE_LINE_BALLAS, 100597, "We go head to head." },
 	{ VOICE_LINE_BALLAS, 100598, "You better think for a second!" },
 	{ VOICE_LINE_BALLAS, 100600, "Ah not this shit again! " },
@@ -380,7 +410,7 @@ new VL_Ballas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_BALLAS, 100643, "GROVE ST? WHERE YA GOIN?" },
 	{ VOICE_LINE_BALLAS, 100644, "SHOOT THE TIRES OUT! " },
 	{ VOICE_LINE_BALLAS, 100645, "EY BUST THE WINDOW " },
-	{ VOICE_LINE_BALLAS, 100646, "STOMP/STOP HIM!" },
+	{ VOICE_LINE_BALLAS, 100646, "STOP HIM!" },
 	{ VOICE_LINE_BALLAS, 100647, "Dont let that punk bitch get away! " },
 	{ VOICE_LINE_BALLAS, 100649, "Ey where you going? Come back ere! " },
 	{ VOICE_LINE_BALLAS, 100652, "I aint too old to catch you! " },
@@ -439,7 +469,7 @@ new VL_Ballas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_BALLAS, 100761, "EY GET YOUR HANDS OFFA ME!" },
 	{ VOICE_LINE_BALLAS, 100762, "BIG MISTAKE, YOU KNOW WHO I AM?" },
 	{ VOICE_LINE_BALLAS, 100766, "THIS IS BALLA GANG, OG. " },
-	{ VOICE_LINE_BALLAS, 100776, "FREEZE CHUMP! [gang]" },
+	{ VOICE_LINE_BALLAS, 100776, "FREEZE CHUMP!" },
 	{ VOICE_LINE_BALLAS, 100779, "THIS IS A B' THANG, OG' THANG. " },
 	{ VOICE_LINE_BALLAS, 100785, "EVERYBODY, MOVE IN! " },
 	{ VOICE_LINE_BALLAS, 100786, "I GOT YOUR BACK, I GOT YOU COVERED! " },
@@ -466,7 +496,7 @@ new VL_Ballas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_BALLAS, 100893, "You sucka ! " },
 	{ VOICE_LINE_BALLAS, 100896, "Oh-. shit the police." },
 	{ VOICE_LINE_BALLAS, 100899, "I didn't do shit to yall, I didn't do nothing." },
-	{ VOICE_LINE_BALLAS, 100901, "Don't you have something better to do ? Go { have a donut.   " },
+	{ VOICE_LINE_BALLAS, 100901, "Don't you have something better to do ? Go have a donut." },
 	{ VOICE_LINE_BALLAS, 100911, "What the fuck is they doing on our hood ?" },
 	{ VOICE_LINE_BALLAS, 100925, "You should shut up ! " },
 	{ VOICE_LINE_BALLAS, 100927, "What you expect to get against me huh punk ? " },
@@ -494,164 +524,163 @@ new VL_Ballas [ ] [ E_VOICELINE_DATA ] = {
 
 
 
-new VL_Aztecas [ ] [ E_VOICELINE_DATA ] = {
-	// VLA
-	{ VOICE_LINE_VLA, 108406, "Ima blast on you pendejo" },
-	{ VOICE_LINE_VLA, 108407, "Ballassos ivavossos pendejos " },
-	{ VOICE_LINE_VLA, 108408, "I am gonna kill all the familias holmes " },
-	{ VOICE_LINE_VLA, 108414, "V-L-A run your shit eh! " },
-	{ VOICE_LINE_VLA, 108418, "Get the fuck outta here, South of the border!" },
-	{ VOICE_LINE_VLA, 108419, "Get out of here pinche low lives!" },
-	{ VOICE_LINE_VLA, 108421, "(Curse in Spanish)" },
-	{ VOICE_LINE_VLA, 108426, "Don't lie officer you planted that! " },
-	{ VOICE_LINE_VLA, 108425, "Get some feria then dirty Vagos " },
-	{ VOICE_LINE_VLA, 108428, "I don't say nada, nada en nada  " },
-	{ VOICE_LINE_VLA, 108429, "Hey dog I swear pcp made me do it." },
-	{ VOICE_LINE_VLA, 108433, "Lets give this carro Azteca touch." },
-	{ VOICE_LINE_VLA, 108443, "Hey CJ your sister was just here." },
-	{ VOICE_LINE_VLA, 108540, "Officer I just say no I swear! " },
-	{ VOICE_LINE_VLA, 108427, "Hey homie I don't know shit, I was too high { to remember " },
-	{ VOICE_LINE_VLA, 108439, "Lets rock carlitos ! mundo." },
-	{ VOICE_LINE_VLA, 108442, "Carlito peyasido perdito !" },
-	{ VOICE_LINE_VLA, 108450, "I like to get slunky and drunk que no ?" },
-	{ VOICE_LINE_VLA, 108451, "( Spanish )" },
-	{ VOICE_LINE_VLA, 108453, "A pura te pendejo! " },
-	{ VOICE_LINE_VLA, 108458, "Nah homie I can't forget about that." },
-	{ VOICE_LINE_VLA, 108459, "Pistoo my favorite pass time mate!" },
-	{ VOICE_LINE_VLA, 108460, "Ma homie help me find my needles." },
-	{ VOICE_LINE_VLA, 108461, "Orale cerveza holmes ! " },
-	{ VOICE_LINE_VLA, 108472, "Azteca this carro tascapando ! " },
-	{ VOICE_LINE_VLA, 108481, "Hey homie you let them GO ! " },
-	{ VOICE_LINE_VLA, 108482, "I am too high to chase this Puto ! " },
-	{ VOICE_LINE_VLA, 108487, "Shoot them in the leg homie ! " },
-	{ VOICE_LINE_VLA, 108489, "Hey homie I sniff crack all time sick." },
-	{ VOICE_LINE_VLA, 108491, "Medicine gets me buzzed holmes' " },
-	{ VOICE_LINE_VLA, 108493, " ( Spanish )" },
-	{ VOICE_LINE_VLA, 108488, "I take naked photos of myself" },
-	{ VOICE_LINE_VLA, 108490, "Ey homie I sniff markers all time sick" },
-	{ VOICE_LINE_VLA, 108494, "Ay homie you attracthing them flies ! " },
-	{ VOICE_LINE_VLA, 108495, "You dress like a leva holmes." },
-	{ VOICE_LINE_VLA, 108498, "These shoes make you look like leva." },
-	{ VOICE_LINE_VLA, 108499, "These patos are feo holmes." },
-	{ VOICE_LINE_VLA, 108504, "There's so many got no heart wey'" },
-	{ VOICE_LINE_VLA, 108515, "You dress like a star holmes." },
-	{ VOICE_LINE_VLA, 108519, "Your patos are firmee ! " },
-	{ VOICE_LINE_VLA, 108500, "Ay holmes I think your shoes are on crack." },
-	{ VOICE_LINE_VLA, 108513, "Oralee what a ranfla!?" },
-	{ VOICE_LINE_VLA, 108514, "Your carro gets all the hyenas, ese." },
-	{ VOICE_LINE_VLA, 108434, "Lets make this carro bounce ese " },
-	{ VOICE_LINE_VLA, 108435, "This carro rocking turns me on ! " },
-	{ VOICE_LINE_VLA, 108521, "Ey homie can I get a pair of those ? " },
-	{ VOICE_LINE_VLA, 108537, "I am high ese, whats your execuse ?" },
-	{ VOICE_LINE_VLA, 108581, "I want to have gangbang with you and my { cliqa! " },
-	{ VOICE_LINE_VLA, 108534, "You high holmes ? Cause I am." },
-	{ VOICE_LINE_VLA, 108546, "Tu quidado ! " },
-	{ VOICE_LINE_VLA, 108505, "You fear the Aztecas, ha chavala ? " },
-	{ VOICE_LINE_VLA, 108578, "VLA putos ! Yas tuvo." },
-	{ VOICE_LINE_VLA, 108506, "These pendejos always rank out" },
-	{ VOICE_LINE_VLA, 108507, "We asked a question mochoso!" },
-	{ VOICE_LINE_VLA, 108508, "There's so many afraid to die, que no ?" },
-	{ VOICE_LINE_VLA, 108502, "Answer me then puto ! " },
-	{ VOICE_LINE_VLA, 108418, "Get the fuck outta here south of the border" },
-	{ VOICE_LINE_VLA, 108445, "You shoul've stayed North, cabron." },
-	{ VOICE_LINE_VLA, 108510, "Maybe he's a ratta ese! " },
-	{ VOICE_LINE_VLA, 108511, "Damn homie thats a sex machine" },
-	{ VOICE_LINE_VLA, 108512, "Your ranfla is ruqa magnet wey'" },
-	{ VOICE_LINE_VLA, 108540, "Officer I just say no, I swear!" },
-	{ VOICE_LINE_VLA, 108553, "Oralee human sacrifice time!" },
-	{ VOICE_LINE_VLA, 108487, "Shoot them in the leg homie" },
-	{ VOICE_LINE_VLA, 108523, "Cover me carnales! " },
-	{ VOICE_LINE_VLA, 108563, "Trucha, they shooting!" },
-	{ VOICE_LINE_VLA, 108550, "Watchele ese! " },
-	{ VOICE_LINE_VLA, 108568, "Duck Aztecas! " },
-	{ VOICE_LINE_VLA, 108561, "Hey homie I want something for high tolarance { you know ?" },
-	{ VOICE_LINE_VLA, 108562, "Hey homie you got something mota with the { coca holmes ?" },
-	{ VOICE_LINE_VLA, 108563, "TRUCHA! They're shooting! " },
-	{ VOICE_LINE_VLA, 108569, "Another blood sacrifice ese." },
-	{ VOICE_LINE_VLA, 108572, "I told you this cuete doesn't miss!" },
-	{ VOICE_LINE_VLA, 108574, "PCP tries again pendejo! " },
-	{ VOICE_LINE_VLA, 108575, "I LOVE BUSTING ON OUR ENEMY!" },
-	{ VOICE_LINE_VLA, 108579, "AZTECA EL CONTROLA TODO!" },
-	{ VOICE_LINE_VLA, 108580, "I am looking for dirty bitch like you!" },
-	{ VOICE_LINE_VLA, 108581, "I want to have gangbang with you and my cliqa!" },
-	{ VOICE_LINE_VLA, 108591, "Hey homie you with the cliqa ey ?" },
-	{ VOICE_LINE_VLA, 108592, "Who's your cliqa pendejo !?" },
-	{ VOICE_LINE_VLA, 108598, "VLA cliqa you bang ?" },
-	{ VOICE_LINE_VLA, 108599, "I jack off with guns ey." },
-	{ VOICE_LINE_VLA, 108593, "Aztecas holmes you bang ? " },
-	{ VOICE_LINE_VLA, 108536, "Ey homie I was just trying to masturbate ese { ! " },
-	{ VOICE_LINE_VLA, 108805, "Its time for us to kick some Ballas ass  " },
-	{ VOICE_LINE_VLA, 108801, "Pussy ass Ballas where you at ? " },
-	{ VOICE_LINE_VLA, 108806, "Grove Street piece of shit! " },
-	{ VOICE_LINE_VLA, 108808, "Grove Street sucks ass ! " },
-	{ VOICE_LINE_VLA, 108814, "Aztecas gonna kick your Vagos ass! " },
-	{ VOICE_LINE_VLA, 108820, "I did your mom last night." },
-	{ VOICE_LINE_VLA, 108822, "Vagos ain't shit ! " },
-	{ VOICE_LINE_VLA, 108815, "This is Azteca turf now ! " },
-	{ VOICE_LINE_VLA, 108833, "Your life is over now." },
-	{ VOICE_LINE_VLA, 108849, "I am in a mood for blood" },
-	{ VOICE_LINE_VLA, 108839, "Kill them before the cops get here ! " },
-	{ VOICE_LINE_VLA, 108855, "Learn how to drive." },
-	{ VOICE_LINE_VLA, 108841, "Aztecas get em' " },
-	{ VOICE_LINE_VLA, 108892, "Comeon we got em!" },
-	{ VOICE_LINE_VLA, 108877, "You think you can get away from Los Aztecas ? " },
-	{ VOICE_LINE_VLA, 108884, "Comeon and fight bitch ! " },
-	{ VOICE_LINE_VLA, 108825, "I can't go back to jail man ! " },
-	{ VOICE_LINE_VLA, 108854, "Outta my way man." },
-	{ VOICE_LINE_VLA, 108955, "I always get busted for nothing" },
-	{ VOICE_LINE_VLA, 108852, "You got logger beer in here ? " },
-	{ VOICE_LINE_VLA, 108860, "Why can't anybody drive in this city ? " },
-	{ VOICE_LINE_VLA, 108861, "Wish I had a cigarette too." },
-	{ VOICE_LINE_VLA, 108863, "Ah surveza, nice." },
-	{ VOICE_LINE_VLA, 108864, "Hey ese I am thirsty." },
-	{ VOICE_LINE_VLA, 108876, "Your car is piece of shit." },
-	{ VOICE_LINE_VLA, 108894, "Damn I need to work out" },
-	{ VOICE_LINE_VLA, 108897, "The call of the streets is the most important { thing man." },
-	{ VOICE_LINE_VLA, 108898, "I am sick from all these pussy ass bangers." },
-	{ VOICE_LINE_VLA, 108899, "I am gonna retire early." },
-	{ VOICE_LINE_VLA, 108900, "This city is going to hell but I can't leave." },
-	{ VOICE_LINE_VLA, 108901, "Do your best to protect the Varrio you know." },
-	{ VOICE_LINE_VLA, 108907, "Dude did your mama dress you ? " },
-	{ VOICE_LINE_VLA, 108908, "These are some ugly clothes ese" },
-	{ VOICE_LINE_VLA, 108928, "Ey vato you got some style." },
-	{ VOICE_LINE_VLA, 108930, "Nice shoes ese" },
-	{ VOICE_LINE_VLA, 108924, "That must get you a lot of chicks " },
-	{ VOICE_LINE_VLA, 108913, "Hey man I am talking to you ! " },
-	{ VOICE_LINE_VLA, 108949, "Whats your problem ?" },
-	{ VOICE_LINE_VLA, 108917, "You deaf cabron ? " },
-	{ VOICE_LINE_VLA, 108994, "Ese you better say you are sorry." },
-	{ VOICE_LINE_VLA, 108967, "We won't hurt you we just kill you" },
-	{ VOICE_LINE_VLA, 108935, "I am gonna get this cabron" },
-	{ VOICE_LINE_VLA, 108936, "Somebody get my back! " },
-	{ VOICE_LINE_VLA, 108938, "Oh my arm ! " },
-	{ VOICE_LINE_VLA, 108976, "Get down ! " },
-	{ VOICE_LINE_VLA, 108978, "Cover yourselve." },
-	{ VOICE_LINE_VLA, 108989, "Yeah I got one ! " },
-	{ VOICE_LINE_VLA, 108988, "Sleep well pendejo ! " },
-	{ VOICE_LINE_VLA, 108993, "Hey mamasita you look good today! " },
-	{ VOICE_LINE_VLA, 108999, "You roll with the gang ? " },
-	{ VOICE_LINE_VLA, 109105, "You looking gangster, ese." },
-	{ VOICE_LINE_VLA, 109107, "Woow, where did you get these kicks holmes' ? " },
-	{ VOICE_LINE_VLA, 109110, "Cover me holmes." },
-	{ VOICE_LINE_VLA, 109112, "I am counting on you holmes." },
-	{ VOICE_LINE_VLA, 109115, "You wanna get hurt, HUH ?" },
-	{ VOICE_LINE_VLA, 109120, "Look what did you do to my fuckin car." },
-	{ VOICE_LINE_VLA, 109123, "I am gonna cut your fuckin throat ! " },
-	{ VOICE_LINE_VLA, 109132, "I am innocent officer I swear to god." },
-	{ VOICE_LINE_VLA, 109134, "Thats fucked up I didn't do nothing." },
-	{ VOICE_LINE_VLA, 109135, "Officer comeon I am innocent." },
-	{ VOICE_LINE_VLA, 109138, "You trying to kill me Loco ? " },
-	{ VOICE_LINE_VLA, 109145, "Who the fuck you are ?" },
-	{ VOICE_LINE_VLA, 109146, "Who the fuck you think you are ? " },
-	{ VOICE_LINE_VLA, 109150, "Hey ese hook a homie up." },
-	{ VOICE_LINE_VLA, 109151, "Hey ese you got this smoke ?" },
-	{ VOICE_LINE_VLA, 109152, "MIERDA  Down ! " },
-	{ VOICE_LINE_VLA, 109154, "MIERDA Watch out ! " },
-	{ VOICE_LINE_VLA, 109156, "Come in this way !" },
-	{ VOICE_LINE_VLA, 109168, "Woow nice ese ! " },
-	{ VOICE_LINE_VLA, 109169, "He was in the wrong barrio ese." },
-	{ VOICE_LINE_VLA, 109171, "Wohoo- Miha." },
-	{ VOICE_LINE_VLA, 109174, "Check out big ass chica right there." },
+new VL_Aztecas[][E_VOICELINE_DATA] = {
+    // VLA
+    { VOICE_LINE_VLA, 108406, "I'ma blast on you pendejo" },
+    { VOICE_LINE_VLA, 108407, "Ballasos pendejos y babosos, wey" },
+    { VOICE_LINE_VLA, 108408, "I am gonna kill all the familias holmes" },
+    { VOICE_LINE_VLA, 108414, "VLA run your shit eh!" },
+    { VOICE_LINE_VLA, 108418, "Get the fuck outta here, South of the border!" },
+    { VOICE_LINE_VLA, 108419, "Get out of here pinche low lives!" },
+    { VOICE_LINE_VLA, 108421, "Los Cagos nadan en mierda!" },
+    { VOICE_LINE_VLA, 108426, "Don't lie officer you planted that!" },
+    { VOICE_LINE_VLA, 108425, "Get some feria then dirty Vagos" },
+    { VOICE_LINE_VLA, 108428, "I don't say nada, nada en nada" },
+    { VOICE_LINE_VLA, 108429, "Hey dog I swear pcp made me do it." },
+    { VOICE_LINE_VLA, 108433, "Lets give this carro Azteca touch." },
+    { VOICE_LINE_VLA, 108443, "Hey CJ your sister was just here." },
+    { VOICE_LINE_VLA, 108540, "Officer I just say no I swear!" },
+    { VOICE_LINE_VLA, 108427, "Hey homie I don't know shit, I was too high to remember" },
+    { VOICE_LINE_VLA, 108439, "Lets rock carlitos mundo!" },
+    { VOICE_LINE_VLA, 108442, "Carlito, peyasido perdito!" },
+    { VOICE_LINE_VLA, 108450, "I like to get slunky and drunk que no?" },
+    { VOICE_LINE_VLA, 108451, "(Spanish)" },
+    { VOICE_LINE_VLA, 108453, "A pura te pendejo!" },
+    { VOICE_LINE_VLA, 108458, "Nah homie I can't forget about that." },
+    { VOICE_LINE_VLA, 108459, "Pistoo my favorite pass time mate!" },
+    { VOICE_LINE_VLA, 108460, "Ma homie help me find my needles." },
+    { VOICE_LINE_VLA, 108461, "Orale cerveza holmes!" },
+    { VOICE_LINE_VLA, 108472, "Azteca this carro tascapando!" },
+    { VOICE_LINE_VLA, 108481, "Hey homie you let them go!" },
+    { VOICE_LINE_VLA, 108482, "I am too high to chase this Puto!" },
+    { VOICE_LINE_VLA, 108487, "Shoot them in the leg homie!" },
+    { VOICE_LINE_VLA, 108489, "Hey homie, I sniff crack all time sick." },
+    { VOICE_LINE_VLA, 108491, "Medicine gets me buzzed holmes'" },
+    { VOICE_LINE_VLA, 108493, "(Spanish)" },
+    { VOICE_LINE_VLA, 108488, "I take naked pictures of myself" },
+    { VOICE_LINE_VLA, 108490, "Ey homie I sniff markers all time sick" },
+    { VOICE_LINE_VLA, 108494, "Ay homie you attracting them flies!" },
+    { VOICE_LINE_VLA, 108495, "You dress like a leva holmes." },
+    { VOICE_LINE_VLA, 108498, "These shoes make you look like leva." },
+    { VOICE_LINE_VLA, 108499, "These patos are feo holmes!" },
+    { VOICE_LINE_VLA, 108504, "There's so many got no heart wey'" },
+    { VOICE_LINE_VLA, 108515, "You dress like a star holmes." },
+    { VOICE_LINE_VLA, 108519, "Your patos are firme!" },
+    { VOICE_LINE_VLA, 108500, "Ay holmes I think your shoes are on crack." },
+    { VOICE_LINE_VLA, 108513, "Orale, what a ranfla!?" },
+    { VOICE_LINE_VLA, 108514, "Your carro gets all the hyenas, ese." },
+    { VOICE_LINE_VLA, 108434, "Lets make this carro bounce ese" },
+    { VOICE_LINE_VLA, 108435, "This carro rocking turns me on!" },
+    { VOICE_LINE_VLA, 108521, "Ey homie can I get a pair of those?" },
+    { VOICE_LINE_VLA, 108537, "I am high ese, whats your execuse?" },
+    { VOICE_LINE_VLA, 108581, "I want to have gangbang with you and my cliqa!" },
+    { VOICE_LINE_VLA, 108534, "You high holmes? Cause I am." },
+    { VOICE_LINE_VLA, 108546, "Tu cuidado!" },
+    { VOICE_LINE_VLA, 108505, "You fear the Aztecas, ha chavala?" },
+    { VOICE_LINE_VLA, 108578, "VLA putos! Ya estuvo." },
+    { VOICE_LINE_VLA, 108506, "These pendejos always rank out" },
+    { VOICE_LINE_VLA, 108507, "We asked a question mochoso!" },
+    { VOICE_LINE_VLA, 108508, "There's so many afraid to die, que no ?" },
+    { VOICE_LINE_VLA, 108502, "Answer me then puto ! " },
+    { VOICE_LINE_VLA, 108418, "Get the fuck outta here south of the border" },
+    { VOICE_LINE_VLA, 108445, "You shoul've stayed North, cabron." },
+    { VOICE_LINE_VLA, 108510, "Maybe he's a ratta ese! " },
+    { VOICE_LINE_VLA, 108511, "Damn homie thats a sex machine" },
+    { VOICE_LINE_VLA, 108512, "Your ranfla is ruqa magnet wey'" },
+    { VOICE_LINE_VLA, 108540, "Officer I just say no, I swear!" },
+    { VOICE_LINE_VLA, 108553, "Oralee human sacrifice time!" },
+    { VOICE_LINE_VLA, 108487, "Shoot them in the leg homie" },
+    { VOICE_LINE_VLA, 108523, "Cover me carnales! " },
+    { VOICE_LINE_VLA, 108563, "Trucha, they shooting!" },
+    { VOICE_LINE_VLA, 108550, "Watchele ese! " },
+    { VOICE_LINE_VLA, 108568, "Duck Aztecas! " },
+    { VOICE_LINE_VLA, 108561, "Hey homie I want something for high tolarance you know ?" },
+    { VOICE_LINE_VLA, 108562, "Hey homie you got something mota with the coca holmes ?" },
+    { VOICE_LINE_VLA, 108569, "Another blood sacrifice ese." },
+    { VOICE_LINE_VLA, 108572, "I told you this cuete doesn't miss!" },
+    { VOICE_LINE_VLA, 108574, "PCP tries again pendejo! " },
+    { VOICE_LINE_VLA, 108575, "I love busting on our enemies!" },
+    { VOICE_LINE_VLA, 108579, "Azteca controla todos!" },
+    { VOICE_LINE_VLA, 108580, "I am looking for dirty bitch like you!" },
+    { VOICE_LINE_VLA, 108581, "I want to have gangbang with you and my cliqa!" },
+    { VOICE_LINE_VLA, 108591, "Hey homie you with the cliqa ey ?" },
+    { VOICE_LINE_VLA, 108592, "Who's your cliqa pendejo !?" },
+    { VOICE_LINE_VLA, 108598, "VLA clica, you bang ?" },
+    { VOICE_LINE_VLA, 108599, "I jack off with guns ey." },
+    { VOICE_LINE_VLA, 108593, "Aztecas holmes you bang ? " },
+    { VOICE_LINE_VLA, 108536, "Ey homie I was just trying to masturbate ese" },
+    { VOICE_LINE_VLA, 108805, "Its time for us to kick some Ballas ass" },
+    { VOICE_LINE_VLA, 108801, "Pussy ass Ballas where you at? " },
+    { VOICE_LINE_VLA, 108806, "Grove Street piece of shit! " },
+    { VOICE_LINE_VLA, 108808, "Grove Street sucks ass! " },
+    { VOICE_LINE_VLA, 108814, "Aztecas gonna kick your Vagos ass! " },
+    { VOICE_LINE_VLA, 108820, "I did your mom last night." },
+    { VOICE_LINE_VLA, 108822, "Vagos ain't shit! " },
+    { VOICE_LINE_VLA, 108815, "This is Azteca turf now ! " },
+    { VOICE_LINE_VLA, 108833, "Your life is over now." },
+    { VOICE_LINE_VLA, 108849, "I am in a mood for blood" },
+    { VOICE_LINE_VLA, 108839, "Kill them before the cops get here! " },
+    { VOICE_LINE_VLA, 108855, "Learn how to drive." },
+    { VOICE_LINE_VLA, 108841, "Aztecas get em' " },
+    { VOICE_LINE_VLA, 108892, "Comeon we got em!" },
+    { VOICE_LINE_VLA, 108877, "You think you can get away from Los Aztecas? " },
+    { VOICE_LINE_VLA, 108884, "Comeon and fight bitch ! " },
+    { VOICE_LINE_VLA, 108825, "I can't go back to jail man ! " },
+    { VOICE_LINE_VLA, 108854, "Outta my way man." },
+    { VOICE_LINE_VLA, 108955, "I always get busted for nothing" },
+    { VOICE_LINE_VLA, 108852, "You got logger beer in here? " },
+    { VOICE_LINE_VLA, 108860, "Why can't anybody drive in this city? " },
+    { VOICE_LINE_VLA, 108861, "Wish I had a cigarette too." },
+    { VOICE_LINE_VLA, 108863, "Ah cerveza, nice." },
+    { VOICE_LINE_VLA, 108864, "Hey ese I am thirsty." },
+    { VOICE_LINE_VLA, 108876, "Your car is piece of shit." },
+    { VOICE_LINE_VLA, 108894, "Damn I need to work out" },
+    { VOICE_LINE_VLA, 108897, "The call of the streets is the most important thing man." },
+    { VOICE_LINE_VLA, 108898, "I am sick from all these pussy ass bangers." },
+    { VOICE_LINE_VLA, 108899, "I am gonna retire early." },
+    { VOICE_LINE_VLA, 108900, "This city is going to hell but I can't leave." },
+    { VOICE_LINE_VLA, 108901, "Do your best to protect the Varrio you know." },
+    { VOICE_LINE_VLA, 108907, "Dude did your mama dress you? " },
+    { VOICE_LINE_VLA, 108908, "These are some ugly clothes ese" },
+    { VOICE_LINE_VLA, 108928, "Ey vato you got some style." },
+    { VOICE_LINE_VLA, 108930, "Nice shoes ese" },
+    { VOICE_LINE_VLA, 108924, "That must get you a lot of chicks " },
+    { VOICE_LINE_VLA, 108913, "Hey man I am talking to you ! " },
+    { VOICE_LINE_VLA, 108949, "Whats your problem ?" },
+    { VOICE_LINE_VLA, 108917, "You deaf cabron ? " },
+    { VOICE_LINE_VLA, 108994, "Ese you better say you are sorry." },
+    { VOICE_LINE_VLA, 108967, "We won't hurt you we just kill you" },
+    { VOICE_LINE_VLA, 108935, "I am gonna get this cabron" },
+    { VOICE_LINE_VLA, 108936, "Somebody get my back! " },
+    { VOICE_LINE_VLA, 108938, "Oh my arm ! " },
+    { VOICE_LINE_VLA, 108976, "Get down ! " },
+    { VOICE_LINE_VLA, 108978, "Cover yourselve." },
+    { VOICE_LINE_VLA, 108989, "Yeah I got one ! " },
+    { VOICE_LINE_VLA, 108988, "Sleep well pendejo ! " },
+    { VOICE_LINE_VLA, 108993, "Hey mamasita you look good today! " },
+    { VOICE_LINE_VLA, 108999, "You roll with the gang ? " },
+    { VOICE_LINE_VLA, 109105, "You looking gangster, ese." },
+    { VOICE_LINE_VLA, 109107, "Woow, where did you get these kicks holmes' ? " },
+    { VOICE_LINE_VLA, 109110, "Cover me holmes." },
+    { VOICE_LINE_VLA, 109112, "I am counting on you holmes." },
+    { VOICE_LINE_VLA, 109115, "You wanna get hurt, HUH ?" },
+    { VOICE_LINE_VLA, 109120, "Look what did you do to my fuckin car." },
+    { VOICE_LINE_VLA, 109123, "I am gonna cut your fuckin throat ! " },
+    { VOICE_LINE_VLA, 109132, "I am innocent officer I swear to god." },
+    { VOICE_LINE_VLA, 109134, "Thats fucked up I didn't do nothing." },
+    { VOICE_LINE_VLA, 109135, "Officer comeon I am innocent." },
+    { VOICE_LINE_VLA, 109138, "You trying to kill me Loco ? " },
+    { VOICE_LINE_VLA, 109145, "Who the fuck you are ?" },
+    { VOICE_LINE_VLA, 109146, "Who the fuck you think you are ? " },
+    { VOICE_LINE_VLA, 109150, "Hey ese hook a homie up." },
+    { VOICE_LINE_VLA, 109151, "Hey ese you got this smoke ?" },
+    { VOICE_LINE_VLA, 109152, "Mierda! Down! " },
+    { VOICE_LINE_VLA, 109154, "Mierda! Watch out! " },
+    { VOICE_LINE_VLA, 109156, "Come in this way !" },
+    { VOICE_LINE_VLA, 109168, "Woow nice ese ! " },
+    { VOICE_LINE_VLA, 109169, "He was in the wrong barrio ese." },
+    { VOICE_LINE_VLA, 109171, "Wohoo- Miha." },
+    { VOICE_LINE_VLA, 109174, "Check out big ass chica right there." },
 	{ VOICE_LINE_VLA, 109186, "Who you with holmes ?" },
 	{ VOICE_LINE_VLA, 109187, "You banging ese ? " },
 	{ VOICE_LINE_VLA, 109192, "No lies ese who you with ? " },
@@ -667,10 +696,7 @@ new VL_Aztecas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VLA, 109204, "You can't get down with the brown." },
 	{ VOICE_LINE_VLA, 109205, "You want fight little man ? " },
 	{ VOICE_LINE_VLA, 109206, "You want box or smoke rocks ?" },
-	{ VOICE_LINE_VLA, 109211, "( Curse in Spanish ) " },
-	{ VOICE_LINE_VLA, 109212, "( Curse in Spanish )" },
-	{ VOICE_LINE_VLA, 109213, "( Curse in Spanish )" },
-	{ VOICE_LINE_VLA, 10214 , "( Curse in Spanish )" },
+	{ VOICE_LINE_VLA, 109211, "Babosos, fragiles." },
 	{ VOICE_LINE_VLA, 109226, "It must be worked on somethin to let me go." },
 	{ VOICE_LINE_VLA, 109207, "You want some trouble little man ? " },
 	{ VOICE_LINE_VLA, 109354, "Get outta here little man" },
@@ -699,7 +725,7 @@ new VL_Aztecas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VLA, 109298, "I hope you didn't pay too much for that pants." },
 	{ VOICE_LINE_VLA, 109314, "Man these are some hot clothes mane." },
 	{ VOICE_LINE_VLA, 109316, "Man nothing like a hot style ese." },
-	{ VOICE_LINE_VLA, 109303, "Man you look like you have these shoes from { WW2" },
+	{ VOICE_LINE_VLA, 109303, "Man you look like you have these shoes from World War 2" },
 	{ VOICE_LINE_VLA, 109335, "Ay you fucked up my car" },
 	{ VOICE_LINE_VLA, 109349, "Puto driver" },
 	{ VOICE_LINE_VLA, 109337, "Nothing is safe in this Varrio" },
@@ -718,26 +744,69 @@ new VL_Aztecas [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VLA, 109321, "Cover Ma' Ass ! " },
 	{ VOICE_LINE_VLA, 109339, "This shit keep happenin around here." },
 	{ VOICE_LINE_VLA, 109390, "Thats incredible." },
-	{ VOICE_LINE_VLA, 109331, "I am gonna teach you the value of the money { puto!" },
+	{ VOICE_LINE_VLA, 109331, "I am gonna teach you the value of the money puto!" },
 	{ VOICE_LINE_VLA, 109336, "Why don't I have more feria to live." },
 	{ VOICE_LINE_VLA, 109339, "This shit' keeps happening around here." },
 	{ VOICE_LINE_VLA, 109343, "I am not some pedo, cabron!" },
 	{ VOICE_LINE_VLA, 109356, "Just keep to the pedal to the medal!" },
-	{ VOICE_LINE_VLA, 106205, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106225, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106227, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106232, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106233, " (Spanish)" },
-	{ VOICE_LINE_VLA, 104129, " (Spanish)" },
-	{ VOICE_LINE_VLA, 104222, " (Spanish)" },
-	{ VOICE_LINE_VLA, 104223, " (Spanish)" },
-	{ VOICE_LINE_VLA, 104225, " (Spanish)" },
-	{ VOICE_LINE_VLA, 104263, " (Spanish)" },
-	{ VOICE_LINE_VLA, 104267, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106247, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106248, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106252, " (Spanish)" },
-	{ VOICE_LINE_VLA, 106254, " (Spanish)" }
+	    { VOICE_LINE_VLA, 101400, "Ballas fools!" },
+    { VOICE_LINE_VLA, 101402, "Ballas perros!" },
+    { VOICE_LINE_VLA, 101547, "Ballas cabrones!" },
+    { VOICE_LINE_VLA, 101404, "Chavalas Vagos!" },
+    { VOICE_LINE_VLA, 101405, "(Curse in Spanish)" },
+    { VOICE_LINE_VLA, 101407, "Pendejo Vagos Idiotas!" },
+    { VOICE_LINE_VLA, 101587, "L-S-V PUTAS!" },
+    { VOICE_LINE_VLA, 101409, "Mi vida loca!" },
+    { VOICE_LINE_VLA, 101411, "Maan you got the wrong guy." },
+    { VOICE_LINE_VLA, 101421, "Heyy move out of the road!" },
+    { VOICE_LINE_VLA, 101422, "Whats the problem wey'" },
+    { VOICE_LINE_VLA, 101423, "Out of the way cabrones!" },
+    { VOICE_LINE_VLA, 101427, "Watch where you going eh." },
+    { VOICE_LINE_VLA, 101431, "Trying to start something eh?" },
+    { VOICE_LINE_VLA, 101432, "Don't fuck with me!" },
+    { VOICE_LINE_VLA, 101443, "Keep it going holmes." },
+    { VOICE_LINE_VLA, 101453, "Oh shit man!" },
+    { VOICE_LINE_VLA, 101455, "Man cops will get all over us!" },
+    { VOICE_LINE_VLA, 101457, "Hey did you know that guy?" },
+    { VOICE_LINE_VLA, 101462, "I can see my house from up here!" },
+    { VOICE_LINE_VLA, 101469, "Juras are on our case ese!" },
+    { VOICE_LINE_VLA, 101475, "Well we're on a A-P-B for sure holmes." },
+    { VOICE_LINE_VLA, 101477, "Nice low profile stats holmes." },
+    { VOICE_LINE_VLA, 101408, "Step on it ese." },
+    { VOICE_LINE_VLA, 101487, "Varrios Los Aztecas will never die!" },
+    { VOICE_LINE_VLA, 101490, "There's some nice people in the Varrios man." },
+    { VOICE_LINE_VLA, 101491, "Gonna build me a new hopper." },
+    { VOICE_LINE_VLA, 101493, "North Side have no heart man." },
+    { VOICE_LINE_VLA, 101499, "Keep your stupid heads down!" },
+    { VOICE_LINE_VLA, 101525, "Take cover!" },
+    { VOICE_LINE_VLA, 101528, "Hey hit the dirt holmes!" },
+    { VOICE_LINE_VLA, 101500, "I am moving COVER ME!" },
+    { VOICE_LINE_VLA, 101501, "Keep them busy!" },
+    { VOICE_LINE_VLA, 101503, "Arghh- Fuck!" },
+    { VOICE_LINE_VLA, 101509, "You are in trouble now eh." },
+    { VOICE_LINE_VLA, 101512, "(Curse in Spanish)" },
+    { VOICE_LINE_VLA, 101513, "(Curse in Spanish)" },
+    { VOICE_LINE_VLA, 101514, "Another BAD fuckin day!" },
+    { VOICE_LINE_VLA, 101515, "FUCK YOU CHOTA!" },
+    { VOICE_LINE_VLA, 101517, "Varrios gonna get you man!" },
+    { VOICE_LINE_VLA, 101518, "I am innocent holmes!" },
+    { VOICE_LINE_VLA, 101533, "I am gonna cut you up holmes!" },
+    { VOICE_LINE_VLA, 101535, "I am gonna snap your bones man!" },
+    { VOICE_LINE_VLA, 101536, "YOU MESSING WITH THE AZTECAS!" },
+    { VOICE_LINE_VLA, 101537, "Real tough guy eh ?" },
+    { VOICE_LINE_VLA, 101538, "You think you tough huh holmes ?" },
+    { VOICE_LINE_VLA, 101539, "Comeon holmes hit me fucker!" },
+    { VOICE_LINE_VLA, 101540, "Eh holmes we cool huh ?" },
+    { VOICE_LINE_VLA, 101541, "Ey ese put it away." },
+    { VOICE_LINE_VLA, 101544, "Stick it up your ass." },
+    { VOICE_LINE_VLA, 101547, "Big mistake idiota." },
+    { VOICE_LINE_VLA, 101548, "You looking for trouble ?" },
+    { VOICE_LINE_VLA, 101550, "What the fuck ?" },
+    { VOICE_LINE_VLA, 101553, "I know your face puta!" },
+    { VOICE_LINE_VLA, 101554, "Aztecas gonna catch up with you." },
+    { VOICE_LINE_VLA, 101557, "Get the fuck out of the car holmes." },
+    { VOICE_LINE_VLA, 101559, "Run if you don't want trouble eh." },
+    { VOICE_LINE_VLA, 101581, "Wanna bullet in your balls ?" }
 } ;
 
 
@@ -766,8 +835,8 @@ new VL_Vagos [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VAGOS, 103834, "It wasn't ME ! " },
 	{ VOICE_LINE_VAGOS, 103835, "Do I look like a Criminal ? " },
 	{ VOICE_LINE_VAGOS, 103836, "Do I look like I done anything ? " },
-	{ VOICE_LINE_VAGOS, 103837, "Fuck off man, comeon homies lets gets this { punk ! " },
-	{ VOICE_LINE_VAGOS, 103845, "We gonna fuck you up Grove Streets mother { fuckers!" },
+	{ VOICE_LINE_VAGOS, 103837, "Fuck off man, comeon homies lets gets this punk ! " },
+	{ VOICE_LINE_VAGOS, 103845, "We gonna fuck you up Grove Streets motherfuckers!" },
 	{ VOICE_LINE_VAGOS, 103846, "Santos Vagos will fuck you up ! " },
 	{ VOICE_LINE_VAGOS, 103853, "PENDEJO ! " },
 	{ VOICE_LINE_VAGOS, 103859, "Uhh, fucked up now." },
@@ -783,14 +852,14 @@ new VL_Vagos [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VAGOS, 103898, "Man bitches like me cause I protect them." },
 	{ VOICE_LINE_VAGOS, 103900, "Pinche cochinero." },
 	{ VOICE_LINE_VAGOS, 103903, "Man these are some ugly ass clothes ! " },
-	{ VOICE_LINE_VAGOS, 103904, "Man your clothes make you look like little { bitch ese ! " },
+	{ VOICE_LINE_VAGOS, 103904, "Man your clothes make you look like a little bitch ese ! " },
 	{ VOICE_LINE_VAGOS, 103906, "Damn bro your shoes STINK! " },
 	{ VOICE_LINE_VAGOS, 103909, "Whats up puto you can hear me ? " },
 	{ VOICE_LINE_VAGOS, 103910, "I am talking to you bitch !? " },
 	{ VOICE_LINE_VAGOS, 103912, "Are you ignoring me ? " },
 	{ VOICE_LINE_VAGOS, 103913, "You should show me some respect in my barrio." },
 	{ VOICE_LINE_VAGOS, 103914, "You better answer me back you little bitch ! " },
-	{ VOICE_LINE_VAGOS, 103917, "Was that what ? NOW, fuck you up ! " },
+	{ VOICE_LINE_VAGOS, 103917, "Was that what? NOW, fuck you up ! " },
 	{ VOICE_LINE_VAGOS, 103918, "Hey thats a nice car man ! " },
 	{ VOICE_LINE_VAGOS, 103920, "Big carro, for a BIG man ! " },
 	{ VOICE_LINE_VAGOS, 103921, "Thats a nice shirt ese." },
@@ -829,8 +898,8 @@ new VL_Vagos [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VAGOS, 104038, "Santos Vagos gonna fuck you up." },
 	{ VOICE_LINE_VAGOS, 104039, "Officer,officer let me explain !" },
 	{ VOICE_LINE_VAGOS, 104042, "I fuckin hate cops ! " },
-	{ VOICE_LINE_VAGOS, 104050, "This is what happens when you FUCK with the { Vagos ! " },
-	{ VOICE_LINE_VAGOS, 104053, "I'll show you who you messing with mother { fucker ! " },
+	{ VOICE_LINE_VAGOS, 104050, "This is what happens when you FUCK with the Vagos ! " },
+	{ VOICE_LINE_VAGOS, 104053, "I'll show you who you messing with motherfucker ! " },
 	{ VOICE_LINE_VAGOS, 104055, "Out of the FUCKIN car ! " },
 	{ VOICE_LINE_VAGOS, 104066, "Ugh.. this tastes like horse piss." },
 	{ VOICE_LINE_VAGOS, 104067, "This part is full of pendejos.." },
@@ -869,7 +938,7 @@ new VL_Vagos [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VAGOS, 104151, "You are at the wrong part of the town ese." },
 	{ VOICE_LINE_VAGOS, 104152, "Turn back and get the fuck outta here." },
 	{ VOICE_LINE_VAGOS, 104155, "You trespassing ese." },
-	{ VOICE_LINE_VAGOS, 104157, "You better go back to your own neighborhood { ese." },
+	{ VOICE_LINE_VAGOS, 104157, "You better go back to your own neighborhood ese." },
 	{ VOICE_LINE_VAGOS, 104159, "You don't belong here." },
 	{ VOICE_LINE_VAGOS, 104160, "What Are you lost ? " },
 	{ VOICE_LINE_VAGOS, 104166, "Hey ese I wanna get HIGH! " },
@@ -886,7 +955,7 @@ new VL_Vagos [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VAGOS, 104181, "Daamn you're good looking hyena!" },
 	{ VOICE_LINE_VAGOS, 104182, "Daamn good looking mami ! " },
 	{ VOICE_LINE_VAGOS, 104195, "You bang ese ? " },
-	{ VOICE_LINE_VAGOS, 104198, "I am fucking Vagos, bitch who the hell are { you ? " },
+	{ VOICE_LINE_VAGOS, 104198, "I am fucking Vagos, bitch who the hell are you ? " },
 	{ VOICE_LINE_VAGOS, 104202, "Ballasos, biggest victim of East Los ! " },
 	{ VOICE_LINE_VAGOS, 104204, "You Ballasos are BITCHES for Aztecas ! " },
 	{ VOICE_LINE_VAGOS, 104205, "I heard Ballasos are getting smoked by V-L-A ?" },
@@ -926,7 +995,7 @@ new VL_Vagos [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VAGOS, 104356, "You miss cabron ! " },
 	{ VOICE_LINE_VAGOS, 104364, "You know where you at ? " },
 	{ VOICE_LINE_VAGOS, 104368, "Another body to drop ! " },
-	{ VOICE_LINE_VAGOS, 104376, "Comeon holmes I need that shit right now { holmes." },
+	{ VOICE_LINE_VAGOS, 104376, "Comeon holmes I need that shit right now holmes." },
 	{ VOICE_LINE_VAGOS, 104378, "Trucha ! He's got a cuete." },
 	{ VOICE_LINE_VAGOS, 104379, "Duck holmes ! " },
 	{ VOICE_LINE_VAGOS, 104381, "Vagos ! He's shooting." },
@@ -955,6 +1024,49 @@ new VL_Vagos [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_VAGOS, 106254, " (Spanish)" }
 } ;
 
+new VL_Rifas[][E_VOICELINE_DATA] = {
+    { VOICE_LINE_RIFAS, 105602, "Got some laundry to give your parents." },
+    { VOICE_LINE_RIFAS, 105603, "You loading your cuete with rice ?" },
+    { VOICE_LINE_RIFAS, 105607, "Fine! Throw me in the pinta." },
+    { VOICE_LINE_RIFAS, 105610, "Pinche animales!" },
+    { VOICE_LINE_RIFAS, 105614, "Lets get them carnals!" },
+    { VOICE_LINE_RIFAS, 105620, "You pendejos better defend yourselves!" },
+    { VOICE_LINE_RIFAS, 105621, "You just gonna sit there like bunch of fools ?" },
+    { VOICE_LINE_RIFAS, 105624, "Give you whole new perspective!" },
+    { VOICE_LINE_RIFAS, 105638, "I hate this place and everything." },
+    { VOICE_LINE_RIFAS, 105644, "I don't have any miha to visit anyways." },
+    { VOICE_LINE_RIFAS, 105649, "This your canton or something cabron ?" },
+    { VOICE_LINE_RIFAS, 105652, "Thanks, I needed it bad." },
+    { VOICE_LINE_RIFAS, 105653, "Give me some more I forgot to taste already." },
+    { VOICE_LINE_RIFAS, 105656, "Give me a sip or preaper to die." },
+    { VOICE_LINE_RIFAS, 105666, "Face me like a hombre then!" },
+    { VOICE_LINE_RIFAS, 105667, "Thats how we do it here." },
+    { VOICE_LINE_RIFAS, 105675, "I'll chase you forever." },
+    { VOICE_LINE_RIFAS, 105683, "Is there something wrong with me ?" },
+    { VOICE_LINE_RIFAS, 105684, "I am so sick of masturbating." },
+    { VOICE_LINE_RIFAS, 105685, "I only trust mi ranfla now." },
+    { VOICE_LINE_RIFAS, 105687, "I wish I was born in a dead body." },
+    { VOICE_LINE_RIFAS, 105688, "There's no point to anything." },
+    { VOICE_LINE_RIFAS, 105691, "Since you don't use your ears, do you mind If I cut them off ?" },
+    { VOICE_LINE_RIFAS, 105708, "Where there's everything bad happening to me." },
+    { VOICE_LINE_RIFAS, 105720, "I am a pintero man, PINTERO!" },
+    { VOICE_LINE_RIFAS, 105739, "Come here, let me show you my meth." },
+    { VOICE_LINE_RIFAS, 105740, "Its a good barrio right ?" },
+    { VOICE_LINE_RIFAS, 105744, "Get down, the fool gone wild." },
+    { VOICE_LINE_RIFAS, 105762, "The animales should pay us for this shit." },
+    { VOICE_LINE_RIFAS, 105764, "You remind me of my old miha!" },
+    { VOICE_LINE_RIFAS, 105765, "You can help me to get hyena." },
+    { VOICE_LINE_RIFAS, 105770, "I have nothing to lose cabron." },
+    { VOICE_LINE_RIFAS, 105773, "You gonna learn how shitty life is ese." },
+    { VOICE_LINE_RIFAS, 105777, "I am gonna go LOCO on you my friend." },
+    { VOICE_LINE_RIFAS, 105779, "You a gangbanger mane ?" },
+    { VOICE_LINE_RIFAS, 105783, "You in some cliqa mayne ?" },
+    { VOICE_LINE_RIFAS, 105791, "You gonna be a banger when you grow up cabron ?" },
+    { VOICE_LINE_RIFAS, 105792, "I don't care if you pull the trigger." },
+    { VOICE_LINE_RIFAS, 105794, "Mi ex-miha wants to have cuete like that." },
+    { VOICE_LINE_RIFAS, 105796, "You look like a puto holding that." },
+    { VOICE_LINE_RIFAS, 105799, "I won't fight back if you promise to kill me." }
+};
 new VL_LSPD [ ] [ E_VOICELINE_DATA ] = {
 	{ VOICE_LINE_LSPD, 10800, "This doesn't concern you." } ,
 	{ VOICE_LINE_LSPD, 10803, "Don't push me son." } ,
@@ -1109,6 +1221,16 @@ Voiceline_GetDescription(soundid, desc [ ], len = sizeof ( desc )) {
 
 		else continue ;
 	}
+	for ( new i, j = sizeof ( VL_Rifas ); i < j ; i ++ ) {
+
+		if ( VL_Rifas [ i ] [ E_VOICELINE_ID ] == soundid ) {
+
+			format ( desc, len, "%s", VL_Rifas [ i ] [ E_VOICELINE_DESC ] ) ;
+			found = true ;
+		}
+
+		else continue ;
+	}
 
 
 	for ( new i, j = sizeof ( VL_LSPD ); i < j ; i ++ ) {
@@ -1160,7 +1282,7 @@ CMD:vl(playerid, params[]) {
 
 	if ( sscanf ( params, "i", slot ) ) {
 
-		return SendClientMessage(playerid, -1, "/vl [slot] - use /myvoices") ;
+		return SendClientMessage(playerid, -1, "/vl [slot] - use /myvoices || /myvls") ;
 	}
 
 	switch ( slot ) {
@@ -1380,6 +1502,10 @@ CMD:myvoices(playerid, params[]) {
 	return true ;
 }
 
+CMD:myvls(playerid, params[]) {
+	return cmd_myvoices(playerid, params);
+}
+
 CMD:voicelines(playerid, params[]) {
 
 	inline voiceline_select(pid, dialogid, response, listitem, string: inputtext[]) {
@@ -1396,9 +1522,13 @@ CMD:voicelines(playerid, params[]) {
 	}
 
 	Dialog_ShowCallback ( playerid, using inline voiceline_select, DIALOG_STYLE_LIST, 
-		"Voicelines: Select Gang", "Families\nBallas\nAztecas\nVagos\nPolice", "Proceed", "Back" ) ;
+		"Voicelines: Select Gang", "Families\nBallas\nAztecas\nVagos\nRifas\nPolice", "Proceed", "Back" ) ;
 
 	return true ;
+}
+
+CMD:vls(playerid, params[]) {
+	return cmd_voicelines(playerid, params);
 }
 
 Voicelines_List(playerid, choice ) {
@@ -1485,6 +1615,22 @@ Voicelines_List(playerid, choice ) {
 	}
     if ( choice == 4 ) {
 
+	 	for ( new i = resultcount, j = sizeof ( VL_Rifas ); i < j; i ++ ) {
+
+			resultcount ++ ;
+
+	        if ( resultcount <= MAX_ITEMS_ON_PAGE * PlayerVar [ playerid ] [ E_PLAYER_VOICELINE_PAGE ] ) {
+
+	        	format(string, sizeof(string), "%s%s\n", string, VL_Rifas [ i ] [ E_VOICELINE_DESC ]); 
+	        }
+
+	     	if ( resultcount >= MAX_ITEMS_ON_PAGE * PlayerVar [ playerid ] [ E_PLAYER_VOICELINE_PAGE ] ) {
+	     		nextpage = true; break;
+	     	} 
+		}
+	}
+	if ( choice == 5 ) {
+
 	 	for ( new i = resultcount, j = sizeof ( VL_LSPD ); i < j; i ++ ) {
 
 			resultcount ++ ;
@@ -1547,7 +1693,8 @@ Voicelines_List(playerid, choice ) {
 								case 1: PlayPlayerVoiceline(playerid,	VL_Ballas 	[ selection ] 	[ E_VOICELINE_ID ] );
 								case 2: PlayPlayerVoiceline(playerid,	VL_Aztecas 	[ selection ] 	[ E_VOICELINE_ID ] );
 								case 3: PlayPlayerVoiceline(playerid,	VL_Vagos 	[ selection ] 	[ E_VOICELINE_ID ] );
-								case 4: PlayPlayerVoiceline(playerid,	VL_LSPD 	[ selection ] 	[ E_VOICELINE_ID ] );
+								case 4: PlayPlayerVoiceline(playerid,	VL_Rifas 	[ selection ] 	[ E_VOICELINE_ID ] );
+								case 5: PlayPlayerVoiceline(playerid,	VL_LSPD 	[ selection ] 	[ E_VOICELINE_ID ] );
 							}
 						}
 
@@ -1564,7 +1711,8 @@ Voicelines_List(playerid, choice ) {
 										case 1: idx = 	VL_Ballas 	[ selection ] [ E_VOICELINE_ID ] ;
 										case 2: idx = 	VL_Aztecas 	[ selection ] [ E_VOICELINE_ID ] ;
 										case 3: idx = 	VL_Vagos 	[ selection ] [ E_VOICELINE_ID ] ;
-										case 4: idx = 	VL_LSPD 	[ selection ] [ E_VOICELINE_ID ] ;
+										case 4: idx = 	VL_Rifas 	[ selection ] [ E_VOICELINE_ID ] ;
+										case 5: idx = 	VL_LSPD 	[ selection ] [ E_VOICELINE_ID ] ;
 									}
 
 									switch ( listitemy ) {
@@ -1746,7 +1894,7 @@ PlayPlayerVoiceline(playerid, voiceid) {
 
 	if ( PlayerVar [ playerid ] [ E_PLAYER_VOICELINE_COOLDOWN ] && (gettime() - PlayerVar [ playerid ] [ E_PLAYER_VOICELINE_COOLDOWN ]) < VOICELINE_COOLDOWN_TIME )
 	{
-		return SendClientMessage(playerid, 0xC4DD89FF, "You must wait before playing another voice line.");
+		return SendClientMessage(playerid, 0xC4DD89FF, "You must wait before playing another voice-line.");
 	}
 
 	new text [ 128 ] ;
@@ -1796,202 +1944,3 @@ PlayerPlaySoundEx(playerid, sound, Float:range=20.0)
 	}
 	return 1;
 }
-
-
-/*
-Cesar Vialpando:
-
-101400: Ballas fools! 
-101402: Ballas perros! 
-101547: Ballas cabrones!
-101404: Chavalas Vagos! 
-101405: (Curse in Spanish)
-101407: Pendejo Vagos Idiotas! 
-101587: L-S-V PUTAS! 
-101409: Mi vida loca! 
-101411: Maan you got the wrong guy.
-101421: Heyy move out of the road! 
-101422: Whats the problem wey'
-101423: Out of the way cabrones! 
-101427: Watch where you going eh.
-101431: Trying to start something eh?
-101432: Don't fuck with me!
-101443: Keep it going holmes.
-101453: Oh shit man! 
-101455: Man cops will get all over us!
-101457: Hey did you know that guy?
-101462: I can see my house from up here! 
-101469: Juras are on our case ese! 
-101475: Well we're on a A-P-B for sure holmes.
-101477: Nice low profile stats holmes.
-101408: Step on it ese.
-101487: Varrios Los Aztecas will never die! 
-101490: There's some nice people in the Varrios man.
-101491: Gonna build me a new hopper.
-101493: North Side have no heart man.
-101499: Keep your stupid heads down! 
-101525: Take cover! 
-101528: Hey hit the dirt holmes! 
-101500: I am moving COVER ME! 
-101501: Keep them busy! 
-101503: Arghh- Fuck!
-101509: You are in trouble now eh.
-101512: (Curse in Spanish)
-101513: (Curse in Spanish)
-101514: Another BAD fuckin day! 
-101515: FUCK YOU CHOTA! 
-101517: Varrios gonna get you man! 
-101518: I am innocent holmes! 
-101533: I am gonna cut you up holmes!
-101535: I am gonna snap your bones man! 
-101536: YOU MESSING WITH THE AZTECAS! 
-101537: Real tough guy eh ?
-101538: You think you tough huh holmes ?
-101539: Comeon holmes hit me fucker! 
-101540: Eh holmes we cool huh ?
-101541: Ey ese put it away.
-101544: Stick it up your ass.
-101547: Big mistake idiota.
-101548: You looking for trouble ?
-101550: What the fuck ?
-101553: I know your face puta! 
-101554: Aztecas gonna catch up with you.
-101557: Get the fuck out of the car holmes.
-101559: Run if you don't want trouble eh.
-101581: Wanna bullet in your balls ?
-101584: (Talking in Spanish)
-
-
-Sweet Johnson
-
-
-/play 107600 "Ey Balla fools!"
-/play 107601 "Balla bitches"
-/play 107602 "Step up Balla bitches"
-/play 107610 "The fuck you doing man?"
-/play 107613 "Hol'on homie!"
-/play 107620 "You got'a prob'?"
-/play 107621 "You wanna say sum'?"
-/play 107638 "Lets roll!"
-/play 107641 "Slow down, fool."
-/play 107673 "Watch out!"
-/play 107679 "Heads down!"
-/play 107682 "Get down!"
-/play 107684 "Time to beat up another fool"
-/play 107685 "You dead meat"
-/play 107686 "Im talking to you mother fucker"
-/play 107687 "Taste my knuckles"
-/play 107690 "You think you can take me?"
-/play 107692 "You think you can take me?"
-/play 107693 "You think you are killa?"
-/play 107698 "Break ya self, fool!"
-/play 107701 "Nice try, but not today"
-/play 107702 "Wrong move mofoka"
-/play 107708 "Time to die, balla bitch"
-/play 107709 "Pop those Ball-sucks"
-/play 107710 "Grove Street justice!"
-/play 107715 "You think you are OG, huh?"
-/play 107719  "You want the whole clip?"
-/play 107724 "Die mother fucker, die!"
-/play 107725 "Man, you made the biggest misstake"
-
-
-
-Alejandro Bortolo ( My character ;D )
-106403 : Hey Pinches!
-106404 : Where do you think u going pendejo! 
-106406 : Yeahh Keep Trying!
-106411 : You guys are all bitches ! 
-109415 : I am beating this shit up to the grouuund ! 
-106417 : Burn this shit mother fuckers comeon ! 
-106419 : Welcome to hell bitch! 
-106427 : I am getting drunk tonight
-106429 : Move it Pendejo! 
-106433 : Move bitch get out the way ! 
-106437 . Fuck I wanted this shit.. 
-106435 : Comeon! 
-106440 : Ey tengor se Ese
-106439 : Gimme sip of that carnal 
-106458 : Hey come back here bitch 
-106468 : Where the fuck did u get these car from 
-106470 : Shit you fire man
-11006475: Those shoes are mierda! 
-106477 : Don't be ignore me mother fucker
-106488 : Cover me ese fuck ! 
-106490 : Watch out mother fuckers ! 
-106511 : Pinche Cabron ! 
-106514 : You are at the wrong side of the town homie.
-106517 : Get the fuck outta here homie 
-106523 : Comeon gimme some of that fire 
-106532: See you in hell pinche puto!
-106534: No more banging for you cabron!
-106535 : Lights out puto ! 
-106553 : What barrio you from ?
-106584 : Go go go go 
-106599 : Whats happenin beautiful ? 
-106465: My gang is like my family homie.
-106466: I need something to sip on man! 
-106478: I know you hear me.
-106480: Nice carrucha you got there man.
-106484: Hey nice gear man.
-106486: I looove them kicks homie! 
-106497: Come here bitch! 
-106518: This is my Varrio! 
-106520: Fuckin levas!
-106539: Daamn girl you fine! 
-106552: Ey ey homie, do you gang bang ?
-
-
-More Voices for both LSV&VLA
-
-105602: Got some laundry to give your parents.
-105603: You loading your cuete with rice ?
-105607: Fine! Throw me in the pinta.
-105610: Pinche animales! 
-105614: Lets get them carnals! 
-105620: You pendejos better defend yourselves! 
-105621: You just gonna sit there like bunch of fools ?
-105624: Give you whole new perspective!
-105638: I hate this place and everything.
-105644: I don't have any miha to visit anyways.
-105649: This your canton or something cabron ?
-105652: Thanks, I needed it bad.
-105653: Give me some more I forgot to taste already.
-105656: Give me a sip or preaper to die.
-105666: Face me like a hombre then! 
-105667: Thats how we do it here.
-105675: I'll chase you forever.
-105683: Is there something wrong with me ?
-105684: I am so sick of masturbating.
-105685: I only trust mi ranfla now.
-105687: I wish I was born in a dead body.
-105688: There's no point to anything.
-105691: Since you don't use your ears, do you mind If I cut them off ?
-105708: Where there's everything bad happening to me.
-105720: I am a pintero man, PINTERO! 
-105739: Come here, let me show you my meth.
-105740: Its a good barrio right ?
-105744: Get down, the fool gone wild.
-105762: The animales should pay us for this shit.
-105764: You remind me of my old miha!
-105765: You can help me to get hyena.
-105770: I have nothing to lose cabron.
-105773: You gonna learn how shitty life is ese.
-105777: I am gonna go LOCO on you my friend.
-105779: You a gangbanger mane ?
-105783: You in some cliqa mayne ?
-105791: You gonna be a banger when you grow up cabron ?
-105792: I don't care if you pull the trigger.
-105794: Mi ex-miha wants to have cuete like that.
-105796: You look like a puto holding that.
-105799: I won't fight back if you promise to kill me.
-
-
-
-
-
- 
-
-
-
-*/

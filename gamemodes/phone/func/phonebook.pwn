@@ -26,7 +26,7 @@ Phone_Phonebook_Add ( playerid ) {
 		}
 
 		if ( response ) {
-			new number = strval( inputtext ) ;
+			new number;
 
 
 			if ( ! CheckInputtextCrash ( playerid, inputtext )) {
@@ -34,8 +34,7 @@ Phone_Phonebook_Add ( playerid ) {
 				return true ;
 			}	
 
-			if ( ! number || strlen ( inputtext ) <= 1 ) {
-
+			if(sscanf(inputtext, "i", number)) {
 				SendServerMessage( playerid, PHONE_COLOUR_BAD, "Phone", "A3A3A3", "You've entered an invalid number. Please only use digits.") ;
 				return true ;
 			}
